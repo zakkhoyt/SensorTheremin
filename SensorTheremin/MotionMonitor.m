@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  MotionMonitor.m
 //  SensorTheremin
 //
 //  Created by Zakk Hoyt on 9/15/15.
 //  Copyright © 2015 Zakk Hoyt. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MotionMonitor.h"
 
-@interface ViewController : UIViewController
-
+@implementation MotionMonitor
 
 @end
-
