@@ -8,6 +8,8 @@
 
 #import "TouchViewController.h"
 #import "TouchScene.h"
+#import "MotionMonitor.h"
+
 
 @implementation SKScene (Unarchive)
 
@@ -34,6 +36,7 @@
 {
     [super viewDidLoad];
 
+    [[MotionMonitor sharedInstance] start];
     // Configure the view.
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = YES;
