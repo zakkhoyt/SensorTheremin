@@ -1,10 +1,16 @@
 PODS:
   - AudioKit (2.1.1)
+  - GPUImage (0.1.7)
+  - VWWPermissionKit (1.1.2)
 
 DEPENDENCIES:
   - AudioKit (~> 2.1.1)
+  - GPUImage
+  - VWWPermissionKit (~> 1.1.2)
 
 SPEC CHECKSUMS:
   AudioKit: 54c92607d7c0fe14035793e81afe1717324ce5fa
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  VWWPermissionKit: b8da6b9f20c8c4375b2fac4144c7820e373ec6d5
 
 COCOAPODS: 0.38.2

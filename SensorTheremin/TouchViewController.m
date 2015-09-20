@@ -9,7 +9,12 @@
 #import "TouchViewController.h"
 #import "TouchScene.h"
 #import "MotionMonitor.h"
+#import "VWWPermissionKit.h"
+//#import "VWWPer
 
+#import "OscillatorInstrument.h"
+
+#import "Utilities.h"
 
 @implementation SKScene (Unarchive)
 
@@ -35,6 +40,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    
+//    [self permissions];
 
     [[MotionMonitor sharedInstance] start];
     // Configure the view.
@@ -46,7 +55,8 @@
     
     // Create and configure the scene.
     TouchScene *scene = [TouchScene unarchiveFromFile:@"TouchScene"];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+//    scene.scaleMode = SKSceneScaleModeAspectFill;
+    scene.scaleMode = SKSceneScaleModeResizeFill;
     
     // Present the scene.
     [skView presentScene:scene];
@@ -74,6 +84,24 @@
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
+}
+
+-(void)permissions{
+    
+    VWWCameraPermission *camera = [VWWCameraPermission permissionWithLabelText:@"You can use the camera as an input instrument."];
+    VWWPhotosPermission *photos = [VWWPhotosPermission permissionWithLabelText:@"You can also use a picture as a source via touch interace"];
+    VWWCoreMotionPermission *motion = [VWWCoreMotionPermission permissionWithLabelText:@"Motion sensors can also be used as an input source"];
+    
+    NSArray *permissions = @[camera, photos, motion];
+    
+    [VWWPermissionsManager optionPermissions:permissions
+                                       title:@"Welcome to SensorTheremin! Since this is a sensor based theremin, we'll need to access you device's sensors. This guide wiil help you get setup and then you can start annoying your dog."
+                          fromViewController:self
+                                resultsBlock:^(NSArray *permissions) {
+                                    [permissions enumerateObjectsUsingBlock:^(VWWPermission *permission, NSUInteger idx, BOOL *stop) {
+                                        NSLog(@"%@ - %@", permission.type, [permission stringForStatus]);
+                                    }];
+                                }];
 }
 
 @end

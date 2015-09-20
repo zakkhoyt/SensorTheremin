@@ -57,6 +57,26 @@ install_resource()
       ;;
   esac
 }
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "GPUImage/framework/Resources/lookup.png"
+  install_resource "GPUImage/framework/Resources/lookup_amatorka.png"
+  install_resource "GPUImage/framework/Resources/lookup_miss_etikate.png"
+  install_resource "GPUImage/framework/Resources/lookup_soft_elegance_1.png"
+  install_resource "GPUImage/framework/Resources/lookup_soft_elegance_2.png"
+  install_resource "VWWPermissionKit/VWWPermissionKit/VWWPermissionKit/VWWPermissionManager/VWWPermissionsViewController.xib"
+  install_resource "VWWPermissionKit/VWWPermissionKit/VWWPermissionKit/VWWPermissionManager/VWWPermissionTableViewCell.xib"
+  install_resource "VWWPermissionKit/VWWPermissionKit/VWWPermissionKit/VWWPermissionManager/VWWPermissionTitleTableViewCell.xib"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "GPUImage/framework/Resources/lookup.png"
+  install_resource "GPUImage/framework/Resources/lookup_amatorka.png"
+  install_resource "GPUImage/framework/Resources/lookup_miss_etikate.png"
+  install_resource "GPUImage/framework/Resources/lookup_soft_elegance_1.png"
+  install_resource "GPUImage/framework/Resources/lookup_soft_elegance_2.png"
+  install_resource "VWWPermissionKit/VWWPermissionKit/VWWPermissionKit/VWWPermissionManager/VWWPermissionsViewController.xib"
+  install_resource "VWWPermissionKit/VWWPermissionKit/VWWPermissionKit/VWWPermissionManager/VWWPermissionTableViewCell.xib"
+  install_resource "VWWPermissionKit/VWWPermissionKit/VWWPermissionKit/VWWPermissionManager/VWWPermissionTitleTableViewCell.xib"
+fi
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

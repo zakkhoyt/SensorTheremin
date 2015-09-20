@@ -1,0 +1,15 @@
+
+AVFoundation/GPUImage for vision
+
+CloudKit for posting/sharing/voting/commenting on configurations
+
+Possibly CoreData for storage of configurations. Past theremin serialized JSON to a text file.
+
+SpriteKit for fun graphics (Maybe sceneKit)
+
+InAppPurchases
+
+
+ForceTouch?
+StackViews?
+UIEffectViews?

@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A53C3360B21DF7E19F11A6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB31F260A43435A29AD1E0F /* libPods.a */; };
+		C614B85F1BAE80FF00E57117 /* OscillatorInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = C614B85E1BAE80FF00E57117 /* OscillatorInstrument.m */; };
+		C614B8651BAE83B700E57117 /* NewInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = C614B8641BAE83B700E57117 /* NewInstrument.m */; };
+		C6CEAFB11BA90CBC00569A38 /* Notes.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB01BA90CBC00569A38 /* Notes.m */; };
+		C6CEAFB41BA90E8700569A38 /* Instrument.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB31BA90E8700569A38 /* Instrument.m */; };
+		C6CEAFB71BA90F3500569A38 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB61BA90F3500569A38 /* Utilities.m */; };
+		C6CEAFBE1BA91CD400569A38 /* Conductor.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB91BA91CD400569A38 /* Conductor.m */; };
+		C6CEAFBF1BA91CD400569A38 /* EffectsProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFBB1BA91CD400569A38 /* EffectsProcessor.m */; };
+		C6CEAFC01BA91CD400569A38 /* ToneGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFBD1BA91CD400569A38 /* ToneGenerator.m */; };
+		C6CEAFC81BA91CEF00569A38 /* UIViewController+AlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFC31BA91CEF00569A38 /* UIViewController+AlertController.m */; };
+		C6CEAFC91BA91CEF00569A38 /* UIColor+VWW.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFC51BA91CEF00569A38 /* UIColor+VWW.m */; };
+		C6CEAFCA1BA91CEF00569A38 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFC71BA91CEF00569A38 /* NSTimer+Blocks.m */; };
+		C6CEAFD11BA9DB2400569A38 /* sdks.txt in Resources */ = {isa = PBXBuildFile; fileRef = C6CEAFD01BA9DB2400569A38 /* sdks.txt */; };
+		C6CEAFD41BA9DB3A00569A38 /* notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = C6CEAFD31BA9DB3A00569A38 /* notes.txt */; };
 		C6FACC5C1BA8B26800976D09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC5B1BA8B26800976D09 /* main.m */; };
 		C6FACC5F1BA8B26800976D09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC5E1BA8B26800976D09 /* AppDelegate.m */; };
 		C6FACC651BA8B26800976D09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FACC631BA8B26800976D09 /* Main.storyboard */; };
@@ -19,7 +33,6 @@
 		C6FACC941BA8B35500976D09 /* TouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC911BA8B35500976D09 /* TouchViewController.m */; };
 		C6FACC9C1BA8B3E300976D09 /* MotionMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC9B1BA8B3E300976D09 /* MotionMonitor.m */; };
 		C6FACCA01BA8B52400976D09 /* Sensor.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC9F1BA8B52400976D09 /* Sensor.m */; };
-		F58886178AC203609208F38D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 634015D84FBCE613619CC163 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +53,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		634015D84FBCE613619CC163 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CB31F260A43435A29AD1E0F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E6F9CBD2BA672284A20D54 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C614B85D1BAE80FF00E57117 /* OscillatorInstrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscillatorInstrument.h; sourceTree = "<group>"; };
+		C614B85E1BAE80FF00E57117 /* OscillatorInstrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OscillatorInstrument.m; sourceTree = "<group>"; };
+		C614B8631BAE83B700E57117 /* NewInstrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewInstrument.h; sourceTree = "<group>"; };
+		C614B8641BAE83B700E57117 /* NewInstrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewInstrument.m; sourceTree = "<group>"; };
+		C6CEAFAF1BA90CBC00569A38 /* Notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notes.h; sourceTree = "<group>"; };
+		C6CEAFB01BA90CBC00569A38 /* Notes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notes.m; sourceTree = "<group>"; };
+		C6CEAFB21BA90E8700569A38 /* Instrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instrument.h; sourceTree = "<group>"; };
+		C6CEAFB31BA90E8700569A38 /* Instrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instrument.m; sourceTree = "<group>"; };
+		C6CEAFB51BA90F3500569A38 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		C6CEAFB61BA90F3500569A38 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		C6CEAFB81BA91CD400569A38 /* Conductor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conductor.h; sourceTree = "<group>"; };
+		C6CEAFB91BA91CD400569A38 /* Conductor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conductor.m; sourceTree = "<group>"; };
+		C6CEAFBA1BA91CD400569A38 /* EffectsProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectsProcessor.h; sourceTree = "<group>"; };
+		C6CEAFBB1BA91CD400569A38 /* EffectsProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EffectsProcessor.m; sourceTree = "<group>"; };
+		C6CEAFBC1BA91CD400569A38 /* ToneGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToneGenerator.h; sourceTree = "<group>"; };
+		C6CEAFBD1BA91CD400569A38 /* ToneGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToneGenerator.m; sourceTree = "<group>"; };
+		C6CEAFC21BA91CEF00569A38 /* UIViewController+AlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AlertController.h"; sourceTree = "<group>"; };
+		C6CEAFC31BA91CEF00569A38 /* UIViewController+AlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AlertController.m"; sourceTree = "<group>"; };
+		C6CEAFC41BA91CEF00569A38 /* UIColor+VWW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VWW.h"; sourceTree = "<group>"; };
+		C6CEAFC51BA91CEF00569A38 /* UIColor+VWW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VWW.m"; sourceTree = "<group>"; };
+		C6CEAFC61BA91CEF00569A38 /* NSTimer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Blocks.h"; sourceTree = "<group>"; };
+		C6CEAFC71BA91CEF00569A38 /* NSTimer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Blocks.m"; sourceTree = "<group>"; };
+		C6CEAFD01BA9DB2400569A38 /* sdks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sdks.txt; sourceTree = "<group>"; };
+		C6CEAFD31BA9DB3A00569A38 /* notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
 		C6FACC571BA8B26800976D09 /* SensorTheremin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensorTheremin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FACC5B1BA8B26800976D09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6FACC5D1BA8B26800976D09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F58886178AC203609208F38D /* libPods.a in Frameworks */,
+				1A53C3360B21DF7E19F11A6D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +140,59 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C614B85C1BAE80DA00E57117 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				C614B85D1BAE80FF00E57117 /* OscillatorInstrument.h */,
+				C614B85E1BAE80FF00E57117 /* OscillatorInstrument.m */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
+		C614B8661BAE83BA00E57117 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				C614B8631BAE83B700E57117 /* NewInstrument.h */,
+				C614B8641BAE83B700E57117 /* NewInstrument.m */,
+			);
+			name = New;
+			sourceTree = "<group>";
+		};
+		C6CEAFC11BA91CD800569A38 /* Synth */ = {
+			isa = PBXGroup;
+			children = (
+				C6CEAFB81BA91CD400569A38 /* Conductor.h */,
+				C6CEAFB91BA91CD400569A38 /* Conductor.m */,
+				C6CEAFBA1BA91CD400569A38 /* EffectsProcessor.h */,
+				C6CEAFBB1BA91CD400569A38 /* EffectsProcessor.m */,
+				C6CEAFBC1BA91CD400569A38 /* ToneGenerator.h */,
+				C6CEAFBD1BA91CD400569A38 /* ToneGenerator.m */,
+			);
+			name = Synth;
+			sourceTree = "<group>";
+		};
+		C6CEAFCB1BA91CF400569A38 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C6CEAFC21BA91CEF00569A38 /* UIViewController+AlertController.h */,
+				C6CEAFC31BA91CEF00569A38 /* UIViewController+AlertController.m */,
+				C6CEAFC41BA91CEF00569A38 /* UIColor+VWW.h */,
+				C6CEAFC51BA91CEF00569A38 /* UIColor+VWW.m */,
+				C6CEAFC61BA91CEF00569A38 /* NSTimer+Blocks.h */,
+				C6CEAFC71BA91CEF00569A38 /* NSTimer+Blocks.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		C6CEAFD21BA9DB2800569A38 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				C6CEAFD31BA9DB3A00569A38 /* notes.txt */,
+				C6CEAFD01BA9DB2400569A38 /* sdks.txt */,
+			);
+			name = Documents;
+			sourceTree = "<group>";
+		};
 		C6FACC4E1BA8B26800976D09 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +218,8 @@
 		C6FACC591BA8B26800976D09 /* SensorTheremin */ = {
 			isa = PBXGroup;
 			children = (
+				C6CEAFD21BA9DB2800569A38 /* Documents */,
+				C6CEAFCB1BA91CF400569A38 /* Categories */,
 				C6FACC9D1BA8B49700976D09 /* Model */,
 				C6FACC991BA8B3B500976D09 /* Controllers */,
 				C6FACC981BA8B38D00976D09 /* ViewControllers */,
@@ -169,6 +261,9 @@
 		C6FACC951BA8B35B00976D09 /* Touch */ = {
 			isa = PBXGroup;
 			children = (
+				C614B8661BAE83BA00E57117 /* New */,
+				C614B85C1BAE80DA00E57117 /* Table */,
+				C6CEAFC11BA91CD800569A38 /* Synth */,
 				C6FACC961BA8B36700976D09 /* Sprite */,
 				C6FACC901BA8B35500976D09 /* TouchViewController.h */,
 				C6FACC911BA8B35500976D09 /* TouchViewController.m */,
@@ -217,8 +312,14 @@
 		C6FACC9D1BA8B49700976D09 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C6CEAFAF1BA90CBC00569A38 /* Notes.h */,
+				C6CEAFB01BA90CBC00569A38 /* Notes.m */,
 				C6FACC9E1BA8B52400976D09 /* Sensor.h */,
 				C6FACC9F1BA8B52400976D09 /* Sensor.m */,
+				C6CEAFB21BA90E8700569A38 /* Instrument.h */,
+				C6CEAFB31BA90E8700569A38 /* Instrument.m */,
+				C6CEAFB51BA90F3500569A38 /* Utilities.h */,
+				C6CEAFB61BA90F3500569A38 /* Utilities.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -226,7 +327,7 @@
 		F684F19821082CDEB14E8AFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				634015D84FBCE613619CC163 /* libPods.a */,
+				7CB31F260A43435A29AD1E0F /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -336,7 +437,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6CEAFD41BA9DB3A00569A38 /* notes.txt in Resources */,
 				C6FACC6A1BA8B26800976D09 /* LaunchScreen.storyboard in Resources */,
+				C6CEAFD11BA9DB2400569A38 /* sdks.txt in Resources */,
 				C6FACC671BA8B26800976D09 /* Assets.xcassets in Resources */,
 				C6FACC931BA8B35500976D09 /* TouchScene.sks in Resources */,
 				C6FACC651BA8B26800976D09 /* Main.storyboard in Resources */,
@@ -397,12 +500,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6CEAFC91BA91CEF00569A38 /* UIColor+VWW.m in Sources */,
+				C6CEAFB41BA90E8700569A38 /* Instrument.m in Sources */,
+				C614B8651BAE83B700E57117 /* NewInstrument.m in Sources */,
 				C6FACC921BA8B35500976D09 /* TouchScene.m in Sources */,
+				C6CEAFCA1BA91CEF00569A38 /* NSTimer+Blocks.m in Sources */,
 				C6FACC941BA8B35500976D09 /* TouchViewController.m in Sources */,
+				C6CEAFB71BA90F3500569A38 /* Utilities.m in Sources */,
+				C614B85F1BAE80FF00E57117 /* OscillatorInstrument.m in Sources */,
 				C6FACC5F1BA8B26800976D09 /* AppDelegate.m in Sources */,
 				C6FACC9C1BA8B3E300976D09 /* MotionMonitor.m in Sources */,
+				C6CEAFBF1BA91CD400569A38 /* EffectsProcessor.m in Sources */,
+				C6CEAFC81BA91CEF00569A38 /* UIViewController+AlertController.m in Sources */,
 				C6FACC5C1BA8B26800976D09 /* main.m in Sources */,
+				C6CEAFBE1BA91CD400569A38 /* Conductor.m in Sources */,
 				C6FACCA01BA8B52400976D09 /* Sensor.m in Sources */,
+				C6CEAFB11BA90CBC00569A38 /* Notes.m in Sources */,
+				C6CEAFC01BA91CD400569A38 /* ToneGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
