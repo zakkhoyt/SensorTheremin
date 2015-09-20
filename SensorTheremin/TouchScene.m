@@ -11,7 +11,7 @@
 #import "Instrument.h"
 
 #import "OscillatorInstrument.h"
-#import "NewInstrument.h"
+#import "Oscillator.h"
 
 @interface TouchScene ()
 @property (nonatomic, strong) SKLabelNode *frequencyLabelNode;
@@ -25,7 +25,7 @@
 @end
 
 @implementation TouchScene{
-    NewInstrument *newInstrument;
+    Oscillator *newInstrument;
     BOOL isNewInstrumentPlaying;
 }
 
@@ -49,7 +49,7 @@
 //    [AKOrchestra addInstrument:self.osc];
 
     
-    newInstrument = [[NewInstrument alloc] init];
+    newInstrument = [[Oscillator alloc] init];
     [AKOrchestra addInstrument:newInstrument];
     
 }
@@ -86,8 +86,6 @@
     
     [newInstrument play];
     isNewInstrumentPlaying = YES;
-
-
 }
 
 
@@ -112,7 +110,8 @@
         CGPoint point = [touch locationInNode:self];
         CGPoint normPoint = [self normalizePoint:point];
 //        [self.touchX setFrequencyFromNormalizedValue:normPoint.x];
-        [newInstrument setFrequency:normPoint.x * 1000];
+//        [newInstrument setFrequency:normPoint.x * 1000];
+                [newInstrument setFrequency:normPoint.x * 1000];
 //        [newInstrument setAmplitude:normPoint.y];
 //        [newInstrument setModulation:normPoint.y];
         [newInstrument setCarrier:normPoint.y];

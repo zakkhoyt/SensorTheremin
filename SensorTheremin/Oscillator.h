@@ -8,7 +8,8 @@
 
 #import "AKInstrument.h"
 
-@interface NewInstrument : AKInstrument
+@interface Oscillator : AKInstrument
+
 
 -(void)setFrequency:(float)frequency;
 -(void)setAmplitude:(float)amplitude;

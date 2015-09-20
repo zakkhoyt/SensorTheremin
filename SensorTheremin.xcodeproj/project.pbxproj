@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A53C3360B21DF7E19F11A6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB31F260A43435A29AD1E0F /* libPods.a */; };
 		C614B85F1BAE80FF00E57117 /* OscillatorInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = C614B85E1BAE80FF00E57117 /* OscillatorInstrument.m */; };
-		C614B8651BAE83B700E57117 /* NewInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = C614B8641BAE83B700E57117 /* NewInstrument.m */; };
+		C614B8651BAE83B700E57117 /* Oscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = C614B8641BAE83B700E57117 /* Oscillator.m */; };
 		C6CEAFB11BA90CBC00569A38 /* Notes.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB01BA90CBC00569A38 /* Notes.m */; };
 		C6CEAFB41BA90E8700569A38 /* Instrument.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB31BA90E8700569A38 /* Instrument.m */; };
 		C6CEAFB71BA90F3500569A38 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB61BA90F3500569A38 /* Utilities.m */; };
@@ -57,8 +57,8 @@
 		83E6F9CBD2BA672284A20D54 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C614B85D1BAE80FF00E57117 /* OscillatorInstrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscillatorInstrument.h; sourceTree = "<group>"; };
 		C614B85E1BAE80FF00E57117 /* OscillatorInstrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OscillatorInstrument.m; sourceTree = "<group>"; };
-		C614B8631BAE83B700E57117 /* NewInstrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewInstrument.h; sourceTree = "<group>"; };
-		C614B8641BAE83B700E57117 /* NewInstrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewInstrument.m; sourceTree = "<group>"; };
+		C614B8631BAE83B700E57117 /* Oscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Oscillator.h; sourceTree = "<group>"; };
+		C614B8641BAE83B700E57117 /* Oscillator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Oscillator.m; sourceTree = "<group>"; };
 		C6CEAFAF1BA90CBC00569A38 /* Notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notes.h; sourceTree = "<group>"; };
 		C6CEAFB01BA90CBC00569A38 /* Notes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notes.m; sourceTree = "<group>"; };
 		C6CEAFB21BA90E8700569A38 /* Instrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instrument.h; sourceTree = "<group>"; };
@@ -152,8 +152,8 @@
 		C614B8661BAE83BA00E57117 /* New */ = {
 			isa = PBXGroup;
 			children = (
-				C614B8631BAE83B700E57117 /* NewInstrument.h */,
-				C614B8641BAE83B700E57117 /* NewInstrument.m */,
+				C614B8631BAE83B700E57117 /* Oscillator.h */,
+				C614B8641BAE83B700E57117 /* Oscillator.m */,
 			);
 			name = New;
 			sourceTree = "<group>";
@@ -502,7 +502,7 @@
 			files = (
 				C6CEAFC91BA91CEF00569A38 /* UIColor+VWW.m in Sources */,
 				C6CEAFB41BA90E8700569A38 /* Instrument.m in Sources */,
-				C614B8651BAE83B700E57117 /* NewInstrument.m in Sources */,
+				C614B8651BAE83B700E57117 /* Oscillator.m in Sources */,
 				C6FACC921BA8B35500976D09 /* TouchScene.m in Sources */,
 				C6CEAFCA1BA91CEF00569A38 /* NSTimer+Blocks.m in Sources */,
 				C6FACC941BA8B35500976D09 /* TouchViewController.m in Sources */,

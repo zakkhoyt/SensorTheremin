@@ -5,12 +5,13 @@
 //  Created by Zakk Hoyt on 9/19/15.
 //  Copyright © 2015 Zakk Hoyt. All rights reserved.
 //
+//  http://audiokit.io/tutorials/user-interaction/
 
-#import "NewInstrument.h"
+#import "Oscillator.h"
 #import "AKFoundation.h"
 
 
-@interface NewInstrument ()
+@interface Oscillator ()
 
 //@property (nonatomic, strong) AKParameter *frequencyParameter;
 @property (nonatomic, strong) AKInstrumentProperty *frequencyValue;
@@ -19,7 +20,7 @@
 @property (nonatomic, strong) AKInstrumentProperty *amplitudeValue;
 @end
 
-@implementation NewInstrument 
+@implementation Oscillator 
 
 - (instancetype)init
 {
@@ -38,16 +39,35 @@
         fmOscillator.amplitude = _amplitudeValue;
         fmOscillator.modulationIndex = _modIndexValue;
         fmOscillator.carrierMultiplier = _carrierMultValue;
-        
-        
         [self setAudioOutput:fmOscillator];
+        
+        
+        
+//        AKFlanger *flanger = [[AKFlanger alloc]initWithInput:fmOscillator delayTime:0.245];
+
+
+        
+        
+////
+//        AKDelay *delay = [[AKDelay alloc]initWithInput:fmOscillator delayTime:[AKConstant constantWithFloat:0.5]];
+////        [self setAudioOutput:delay];
+//        [self appendOutput:delay withInput:fmOscillator];
+
+        
+//        AKOrchestra *orchestra = [[AKOrchestra alloc]init];
+//        [orchestra addInstrument:fmOscillator];
+//        [orchestra addInstrument:delay];
+//        
+        
+        
 
     }
     return self;
 }
 
 -(void)setFrequency:(float)frequency{
-    _frequencyValue.value = frequency;
+//    _frequencyValue.value = frequency;
+    _frequencyValue.floatValue = frequency;
 }
 
 -(void)setAmplitude:(float)amplitude{
@@ -61,4 +81,6 @@
 -(void)setCarrier:(float)carrier{
     _carrierMultValue.value = carrier;
 }
+
+
 @end
