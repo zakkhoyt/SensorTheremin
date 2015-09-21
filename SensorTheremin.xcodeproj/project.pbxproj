@@ -10,6 +10,11 @@
 		1A53C3360B21DF7E19F11A6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB31F260A43435A29AD1E0F /* libPods.a */; };
 		C614B85F1BAE80FF00E57117 /* OscillatorInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = C614B85E1BAE80FF00E57117 /* OscillatorInstrument.m */; };
 		C614B8651BAE83B700E57117 /* Oscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = C614B8641BAE83B700E57117 /* Oscillator.m */; };
+		C631A4B91BB0B0FD00A7A153 /* SKScene+Unarchive.m in Sources */ = {isa = PBXBuildFile; fileRef = C631A4B81BB0B0FD00A7A153 /* SKScene+Unarchive.m */; settings = {ASSET_TAGS = (); }; };
+		C631A4BC1BB0B33700A7A153 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C631A4BB1BB0B33700A7A153 /* SettingsTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C631A4C01BB0B37D00A7A153 /* SparkEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = C631A4BE1BB0B37D00A7A153 /* SparkEmitter.sks */; settings = {ASSET_TAGS = (); }; };
+		C631A4C11BB0B37D00A7A153 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = C631A4BF1BB0B37D00A7A153 /* spark.png */; settings = {ASSET_TAGS = (); }; };
+		C631A4C41BB0B74900A7A153 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = C631A4C31BB0B74900A7A153 /* AudioController.m */; settings = {ASSET_TAGS = (); }; };
 		C6CEAFB11BA90CBC00569A38 /* Notes.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB01BA90CBC00569A38 /* Notes.m */; };
 		C6CEAFB41BA90E8700569A38 /* Instrument.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB31BA90E8700569A38 /* Instrument.m */; };
 		C6CEAFB71BA90F3500569A38 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB61BA90F3500569A38 /* Utilities.m */; };
@@ -59,6 +64,14 @@
 		C614B85E1BAE80FF00E57117 /* OscillatorInstrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OscillatorInstrument.m; sourceTree = "<group>"; };
 		C614B8631BAE83B700E57117 /* Oscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Oscillator.h; sourceTree = "<group>"; };
 		C614B8641BAE83B700E57117 /* Oscillator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Oscillator.m; sourceTree = "<group>"; };
+		C631A4B71BB0B0FD00A7A153 /* SKScene+Unarchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKScene+Unarchive.h"; sourceTree = "<group>"; };
+		C631A4B81BB0B0FD00A7A153 /* SKScene+Unarchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKScene+Unarchive.m"; sourceTree = "<group>"; };
+		C631A4BA1BB0B33700A7A153 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		C631A4BB1BB0B33700A7A153 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		C631A4BE1BB0B37D00A7A153 /* SparkEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SparkEmitter.sks; sourceTree = "<group>"; };
+		C631A4BF1BB0B37D00A7A153 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		C631A4C21BB0B74900A7A153 /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
+		C631A4C31BB0B74900A7A153 /* AudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioController.m; sourceTree = "<group>"; };
 		C6CEAFAF1BA90CBC00569A38 /* Notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notes.h; sourceTree = "<group>"; };
 		C6CEAFB01BA90CBC00569A38 /* Notes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notes.m; sourceTree = "<group>"; };
 		C6CEAFB21BA90E8700569A38 /* Instrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instrument.h; sourceTree = "<group>"; };
@@ -149,13 +162,22 @@
 			name = Table;
 			sourceTree = "<group>";
 		};
-		C614B8661BAE83BA00E57117 /* New */ = {
+		C614B8661BAE83BA00E57117 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
 				C614B8631BAE83B700E57117 /* Oscillator.h */,
 				C614B8641BAE83B700E57117 /* Oscillator.m */,
 			);
-			name = New;
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		C631A4BD1BB0B33B00A7A153 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C631A4BA1BB0B33700A7A153 /* SettingsTableViewController.h */,
+				C631A4BB1BB0B33700A7A153 /* SettingsTableViewController.m */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 		C6CEAFC11BA91CD800569A38 /* Synth */ = {
@@ -180,6 +202,8 @@
 				C6CEAFC51BA91CEF00569A38 /* UIColor+VWW.m */,
 				C6CEAFC61BA91CEF00569A38 /* NSTimer+Blocks.h */,
 				C6CEAFC71BA91CEF00569A38 /* NSTimer+Blocks.m */,
+				C631A4B71BB0B0FD00A7A153 /* SKScene+Unarchive.h */,
+				C631A4B81BB0B0FD00A7A153 /* SKScene+Unarchive.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -261,7 +285,7 @@
 		C6FACC951BA8B35B00976D09 /* Touch */ = {
 			isa = PBXGroup;
 			children = (
-				C614B8661BAE83BA00E57117 /* New */,
+				C614B8661BAE83BA00E57117 /* Custom */,
 				C614B85C1BAE80DA00E57117 /* Table */,
 				C6CEAFC11BA91CD800569A38 /* Synth */,
 				C6FACC961BA8B36700976D09 /* Sprite */,
@@ -277,6 +301,8 @@
 				C6FACC8D1BA8B35500976D09 /* TouchScene.h */,
 				C6FACC8E1BA8B35500976D09 /* TouchScene.m */,
 				C6FACC8F1BA8B35500976D09 /* TouchScene.sks */,
+				C631A4BE1BB0B37D00A7A153 /* SparkEmitter.sks */,
+				C631A4BF1BB0B37D00A7A153 /* spark.png */,
 			);
 			name = Sprite;
 			sourceTree = "<group>";
@@ -295,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				C6FACC951BA8B35B00976D09 /* Touch */,
+				C631A4BD1BB0B33B00A7A153 /* Settings */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -304,6 +331,8 @@
 			children = (
 				C6FACC9A1BA8B3E300976D09 /* MotionMonitor.h */,
 				C6FACC9B1BA8B3E300976D09 /* MotionMonitor.m */,
+				C631A4C21BB0B74900A7A153 /* AudioController.h */,
+				C631A4C31BB0B74900A7A153 /* AudioController.m */,
 			);
 			name = Controllers;
 			path = ..;
@@ -440,7 +469,9 @@
 				C6CEAFD41BA9DB3A00569A38 /* notes.txt in Resources */,
 				C6FACC6A1BA8B26800976D09 /* LaunchScreen.storyboard in Resources */,
 				C6CEAFD11BA9DB2400569A38 /* sdks.txt in Resources */,
+				C631A4C01BB0B37D00A7A153 /* SparkEmitter.sks in Resources */,
 				C6FACC671BA8B26800976D09 /* Assets.xcassets in Resources */,
+				C631A4C11BB0B37D00A7A153 /* spark.png in Resources */,
 				C6FACC931BA8B35500976D09 /* TouchScene.sks in Resources */,
 				C6FACC651BA8B26800976D09 /* Main.storyboard in Resources */,
 			);
@@ -502,6 +533,7 @@
 			files = (
 				C6CEAFC91BA91CEF00569A38 /* UIColor+VWW.m in Sources */,
 				C6CEAFB41BA90E8700569A38 /* Instrument.m in Sources */,
+				C631A4B91BB0B0FD00A7A153 /* SKScene+Unarchive.m in Sources */,
 				C614B8651BAE83B700E57117 /* Oscillator.m in Sources */,
 				C6FACC921BA8B35500976D09 /* TouchScene.m in Sources */,
 				C6CEAFCA1BA91CEF00569A38 /* NSTimer+Blocks.m in Sources */,
@@ -509,11 +541,13 @@
 				C6CEAFB71BA90F3500569A38 /* Utilities.m in Sources */,
 				C614B85F1BAE80FF00E57117 /* OscillatorInstrument.m in Sources */,
 				C6FACC5F1BA8B26800976D09 /* AppDelegate.m in Sources */,
+				C631A4C41BB0B74900A7A153 /* AudioController.m in Sources */,
 				C6FACC9C1BA8B3E300976D09 /* MotionMonitor.m in Sources */,
 				C6CEAFBF1BA91CD400569A38 /* EffectsProcessor.m in Sources */,
 				C6CEAFC81BA91CEF00569A38 /* UIViewController+AlertController.m in Sources */,
 				C6FACC5C1BA8B26800976D09 /* main.m in Sources */,
 				C6CEAFBE1BA91CD400569A38 /* Conductor.m in Sources */,
+				C631A4BC1BB0B33700A7A153 /* SettingsTableViewController.m in Sources */,
 				C6FACCA01BA8B52400976D09 /* Sensor.m in Sources */,
 				C6CEAFB11BA90CBC00569A38 /* Notes.m in Sources */,
 				C6CEAFC01BA91CD400569A38 /* ToneGenerator.m in Sources */,
@@ -607,7 +641,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -645,7 +679,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -660,7 +694,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SensorTheremin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vaporwarewolf.SensorTheremin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -674,7 +708,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SensorTheremin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vaporwarewolf.SensorTheremin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
