@@ -10,11 +10,11 @@
 		1A53C3360B21DF7E19F11A6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB31F260A43435A29AD1E0F /* libPods.a */; };
 		C614B85F1BAE80FF00E57117 /* OscillatorInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = C614B85E1BAE80FF00E57117 /* OscillatorInstrument.m */; };
 		C614B8651BAE83B700E57117 /* Oscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = C614B8641BAE83B700E57117 /* Oscillator.m */; };
-		C631A4B91BB0B0FD00A7A153 /* SKScene+Unarchive.m in Sources */ = {isa = PBXBuildFile; fileRef = C631A4B81BB0B0FD00A7A153 /* SKScene+Unarchive.m */; settings = {ASSET_TAGS = (); }; };
-		C631A4BC1BB0B33700A7A153 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C631A4BB1BB0B33700A7A153 /* SettingsTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C631A4C01BB0B37D00A7A153 /* SparkEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = C631A4BE1BB0B37D00A7A153 /* SparkEmitter.sks */; settings = {ASSET_TAGS = (); }; };
-		C631A4C11BB0B37D00A7A153 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = C631A4BF1BB0B37D00A7A153 /* spark.png */; settings = {ASSET_TAGS = (); }; };
-		C631A4C41BB0B74900A7A153 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = C631A4C31BB0B74900A7A153 /* AudioController.m */; settings = {ASSET_TAGS = (); }; };
+		C631A4B91BB0B0FD00A7A153 /* SKScene+Unarchive.m in Sources */ = {isa = PBXBuildFile; fileRef = C631A4B81BB0B0FD00A7A153 /* SKScene+Unarchive.m */; };
+		C631A4BC1BB0B33700A7A153 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C631A4BB1BB0B33700A7A153 /* SettingsTableViewController.m */; };
+		C631A4C01BB0B37D00A7A153 /* SparkEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = C631A4BE1BB0B37D00A7A153 /* SparkEmitter.sks */; };
+		C631A4C11BB0B37D00A7A153 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = C631A4BF1BB0B37D00A7A153 /* spark.png */; };
+		C631A4CA1BB0C05F00A7A153 /* VariableDelay.m in Sources */ = {isa = PBXBuildFile; fileRef = C631A4C91BB0C05F00A7A153 /* VariableDelay.m */; };
 		C6CEAFB11BA90CBC00569A38 /* Notes.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB01BA90CBC00569A38 /* Notes.m */; };
 		C6CEAFB41BA90E8700569A38 /* Instrument.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB31BA90E8700569A38 /* Instrument.m */; };
 		C6CEAFB71BA90F3500569A38 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB61BA90F3500569A38 /* Utilities.m */; };
@@ -26,6 +26,9 @@
 		C6CEAFCA1BA91CEF00569A38 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFC71BA91CEF00569A38 /* NSTimer+Blocks.m */; };
 		C6CEAFD11BA9DB2400569A38 /* sdks.txt in Resources */ = {isa = PBXBuildFile; fileRef = C6CEAFD01BA9DB2400569A38 /* sdks.txt */; };
 		C6CEAFD41BA9DB3A00569A38 /* notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = C6CEAFD31BA9DB3A00569A38 /* notes.txt */; };
+		C6FA4CC91BB108730070E038 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA4CC81BB108730070E038 /* AudioController.m */; };
+		C6FA4CCE1BB1088B0070E038 /* SensorInput.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA4CCB1BB1088B0070E038 /* SensorInput.m */; };
+		C6FA4CCF1BB1088B0070E038 /* Sensors.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA4CCD1BB1088B0070E038 /* Sensors.m */; };
 		C6FACC5C1BA8B26800976D09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC5B1BA8B26800976D09 /* main.m */; };
 		C6FACC5F1BA8B26800976D09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC5E1BA8B26800976D09 /* AppDelegate.m */; };
 		C6FACC651BA8B26800976D09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FACC631BA8B26800976D09 /* Main.storyboard */; };
@@ -70,8 +73,9 @@
 		C631A4BB1BB0B33700A7A153 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		C631A4BE1BB0B37D00A7A153 /* SparkEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SparkEmitter.sks; sourceTree = "<group>"; };
 		C631A4BF1BB0B37D00A7A153 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		C631A4C21BB0B74900A7A153 /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
-		C631A4C31BB0B74900A7A153 /* AudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioController.m; sourceTree = "<group>"; };
+		C631A4C81BB0C05F00A7A153 /* VariableDelay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariableDelay.h; sourceTree = "<group>"; };
+		C631A4C91BB0C05F00A7A153 /* VariableDelay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariableDelay.m; sourceTree = "<group>"; };
+		C680BF101BB0EEE400E58F43 /* AKSoundFiles.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AKSoundFiles.bundle; sourceTree = "<group>"; };
 		C6CEAFAF1BA90CBC00569A38 /* Notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notes.h; sourceTree = "<group>"; };
 		C6CEAFB01BA90CBC00569A38 /* Notes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notes.m; sourceTree = "<group>"; };
 		C6CEAFB21BA90E8700569A38 /* Instrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instrument.h; sourceTree = "<group>"; };
@@ -92,6 +96,12 @@
 		C6CEAFC71BA91CEF00569A38 /* NSTimer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Blocks.m"; sourceTree = "<group>"; };
 		C6CEAFD01BA9DB2400569A38 /* sdks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sdks.txt; sourceTree = "<group>"; };
 		C6CEAFD31BA9DB3A00569A38 /* notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
+		C6FA4CC71BB108730070E038 /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioController.h; path = SensorTheremin/AudioController.h; sourceTree = "<group>"; };
+		C6FA4CC81BB108730070E038 /* AudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioController.m; path = SensorTheremin/AudioController.m; sourceTree = "<group>"; };
+		C6FA4CCA1BB1088B0070E038 /* SensorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SensorInput.h; path = SensorTheremin/SensorInput.h; sourceTree = "<group>"; };
+		C6FA4CCB1BB1088B0070E038 /* SensorInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SensorInput.m; path = SensorTheremin/SensorInput.m; sourceTree = "<group>"; };
+		C6FA4CCC1BB1088B0070E038 /* Sensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sensors.h; path = SensorTheremin/Sensors.h; sourceTree = "<group>"; };
+		C6FA4CCD1BB1088B0070E038 /* Sensors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sensors.m; path = SensorTheremin/Sensors.m; sourceTree = "<group>"; };
 		C6FACC571BA8B26800976D09 /* SensorTheremin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensorTheremin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FACC5B1BA8B26800976D09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6FACC5D1BA8B26800976D09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -113,8 +123,8 @@
 		C6FACC911BA8B35500976D09 /* TouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchViewController.m; sourceTree = "<group>"; };
 		C6FACC9A1BA8B3E300976D09 /* MotionMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MotionMonitor.h; path = SensorTheremin/MotionMonitor.h; sourceTree = "<group>"; };
 		C6FACC9B1BA8B3E300976D09 /* MotionMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MotionMonitor.m; path = SensorTheremin/MotionMonitor.m; sourceTree = "<group>"; };
-		C6FACC9E1BA8B52400976D09 /* Sensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sensor.h; sourceTree = "<group>"; };
-		C6FACC9F1BA8B52400976D09 /* Sensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sensor.m; sourceTree = "<group>"; };
+		C6FACC9E1BA8B52400976D09 /* Sensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sensor.h; path = SensorTheremin/Sensor.h; sourceTree = "<group>"; };
+		C6FACC9F1BA8B52400976D09 /* Sensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sensor.m; path = SensorTheremin/Sensor.m; sourceTree = "<group>"; };
 		FDC2A2D7C08DDBD42B258F76 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,8 +166,6 @@
 		C614B85C1BAE80DA00E57117 /* Table */ = {
 			isa = PBXGroup;
 			children = (
-				C614B85D1BAE80FF00E57117 /* OscillatorInstrument.h */,
-				C614B85E1BAE80FF00E57117 /* OscillatorInstrument.m */,
 			);
 			name = Table;
 			sourceTree = "<group>";
@@ -165,8 +173,12 @@
 		C614B8661BAE83BA00E57117 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				C631A4C81BB0C05F00A7A153 /* VariableDelay.h */,
+				C631A4C91BB0C05F00A7A153 /* VariableDelay.m */,
 				C614B8631BAE83B700E57117 /* Oscillator.h */,
 				C614B8641BAE83B700E57117 /* Oscillator.m */,
+				C614B85D1BAE80FF00E57117 /* OscillatorInstrument.h */,
+				C614B85E1BAE80FF00E57117 /* OscillatorInstrument.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -178,6 +190,43 @@
 				C631A4BB1BB0B33700A7A153 /* SettingsTableViewController.m */,
 			);
 			name = Settings;
+			sourceTree = "<group>";
+		};
+		C631A4CB1BB0C07400A7A153 /* Orchestra */ = {
+			isa = PBXGroup;
+			children = (
+				C6CEAFB21BA90E8700569A38 /* Instrument.h */,
+				C6CEAFB31BA90E8700569A38 /* Instrument.m */,
+				C614B8661BAE83BA00E57117 /* Custom */,
+			);
+			name = Orchestra;
+			path = SensorTheremin;
+			sourceTree = "<group>";
+		};
+		C680BF071BB0EABC00E58F43 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				C6FA4CC71BB108730070E038 /* AudioController.h */,
+				C6FA4CC81BB108730070E038 /* AudioController.m */,
+				C680BF101BB0EEE400E58F43 /* AKSoundFiles.bundle */,
+				C631A4CB1BB0C07400A7A153 /* Orchestra */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		C680BF081BB0EACC00E58F43 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				C6FA4CCA1BB1088B0070E038 /* SensorInput.h */,
+				C6FA4CCB1BB1088B0070E038 /* SensorInput.m */,
+				C6FA4CCC1BB1088B0070E038 /* Sensors.h */,
+				C6FA4CCD1BB1088B0070E038 /* Sensors.m */,
+				C6FACC9A1BA8B3E300976D09 /* MotionMonitor.h */,
+				C6FACC9B1BA8B3E300976D09 /* MotionMonitor.m */,
+				C6FACC9E1BA8B52400976D09 /* Sensor.h */,
+				C6FACC9F1BA8B52400976D09 /* Sensor.m */,
+			);
+			name = Sensors;
 			sourceTree = "<group>";
 		};
 		C6CEAFC11BA91CD800569A38 /* Synth */ = {
@@ -285,7 +334,6 @@
 		C6FACC951BA8B35B00976D09 /* Touch */ = {
 			isa = PBXGroup;
 			children = (
-				C614B8661BAE83BA00E57117 /* Custom */,
 				C614B85C1BAE80DA00E57117 /* Table */,
 				C6CEAFC11BA91CD800569A38 /* Synth */,
 				C6FACC961BA8B36700976D09 /* Sprite */,
@@ -329,10 +377,8 @@
 		C6FACC991BA8B3B500976D09 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C6FACC9A1BA8B3E300976D09 /* MotionMonitor.h */,
-				C6FACC9B1BA8B3E300976D09 /* MotionMonitor.m */,
-				C631A4C21BB0B74900A7A153 /* AudioController.h */,
-				C631A4C31BB0B74900A7A153 /* AudioController.m */,
+				C680BF081BB0EACC00E58F43 /* Sensors */,
+				C680BF071BB0EABC00E58F43 /* Audio */,
 			);
 			name = Controllers;
 			path = ..;
@@ -343,10 +389,6 @@
 			children = (
 				C6CEAFAF1BA90CBC00569A38 /* Notes.h */,
 				C6CEAFB01BA90CBC00569A38 /* Notes.m */,
-				C6FACC9E1BA8B52400976D09 /* Sensor.h */,
-				C6FACC9F1BA8B52400976D09 /* Sensor.m */,
-				C6CEAFB21BA90E8700569A38 /* Instrument.h */,
-				C6CEAFB31BA90E8700569A38 /* Instrument.m */,
 				C6CEAFB51BA90F3500569A38 /* Utilities.h */,
 				C6CEAFB61BA90F3500569A38 /* Utilities.m */,
 			);
@@ -425,6 +467,7 @@
 		C6FACC4F1BA8B26800976D09 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Zakk Hoyt";
 				TargetAttributes = {
@@ -537,17 +580,20 @@
 				C614B8651BAE83B700E57117 /* Oscillator.m in Sources */,
 				C6FACC921BA8B35500976D09 /* TouchScene.m in Sources */,
 				C6CEAFCA1BA91CEF00569A38 /* NSTimer+Blocks.m in Sources */,
+				C6FA4CCF1BB1088B0070E038 /* Sensors.m in Sources */,
 				C6FACC941BA8B35500976D09 /* TouchViewController.m in Sources */,
 				C6CEAFB71BA90F3500569A38 /* Utilities.m in Sources */,
 				C614B85F1BAE80FF00E57117 /* OscillatorInstrument.m in Sources */,
+				C631A4CA1BB0C05F00A7A153 /* VariableDelay.m in Sources */,
 				C6FACC5F1BA8B26800976D09 /* AppDelegate.m in Sources */,
-				C631A4C41BB0B74900A7A153 /* AudioController.m in Sources */,
 				C6FACC9C1BA8B3E300976D09 /* MotionMonitor.m in Sources */,
 				C6CEAFBF1BA91CD400569A38 /* EffectsProcessor.m in Sources */,
+				C6FA4CC91BB108730070E038 /* AudioController.m in Sources */,
 				C6CEAFC81BA91CEF00569A38 /* UIViewController+AlertController.m in Sources */,
 				C6FACC5C1BA8B26800976D09 /* main.m in Sources */,
 				C6CEAFBE1BA91CD400569A38 /* Conductor.m in Sources */,
 				C631A4BC1BB0B33700A7A153 /* SettingsTableViewController.m in Sources */,
+				C6FA4CCE1BB1088B0070E038 /* SensorInput.m in Sources */,
 				C6FACCA01BA8B52400976D09 /* Sensor.m in Sources */,
 				C6CEAFB11BA90CBC00569A38 /* Notes.m in Sources */,
 				C6CEAFC01BA91CD400569A38 /* ToneGenerator.m in Sources */,
@@ -693,9 +739,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SensorTheremin/AudioKit/Platforms/iOS",
+					"$(PROJECT_DIR)/SensorTheremin/AudioKit/Platforms/OSX",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GPUImage\"",
+					"\"${PODS_ROOT}/Headers/Public/VWWPermissionKit\"",
+					"SensorTheremin/ThirdPartyAudioKit/**",
+				);
 				INFOPLIST_FILE = SensorTheremin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SensorTheremin/AudioKit/Platforms/iOS/libs",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vaporwarewolf.SensorTheremin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -707,9 +769,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SensorTheremin/AudioKit/Platforms/iOS",
+					"$(PROJECT_DIR)/SensorTheremin/AudioKit/Platforms/OSX",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GPUImage\"",
+					"\"${PODS_ROOT}/Headers/Public/VWWPermissionKit\"",
+					"SensorTheremin/ThirdPartyAudioKit/**",
+				);
 				INFOPLIST_FILE = SensorTheremin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SensorTheremin/AudioKit/Platforms/iOS/libs",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vaporwarewolf.SensorTheremin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -138,10 +138,10 @@
     CGPoint normPoint = CGPointZero;
     normPoint.x = [Utilities mapInValue:point.x inMinimum:0 inMaximum:self.frame.size.width outMinimum:0.0 outMaximum:1.0];
     normPoint.y = [Utilities mapInValue:point.y inMinimum:0 inMaximum:self.frame.size.height outMinimum:0.0 outMaximum:1.0];
-    self.xLabelNode.text = [NSString stringWithFormat:@"%.2f %.2f",
+    self.xLabelNode.text = [NSString stringWithFormat:@"x: %.2f %.2f",
                             normPoint.x, [AudioController sharedInstance].touchX.currentFrequency];
 
-    self.yLabelNode.text = [NSString stringWithFormat:@"%.2f %.2f",
+    self.yLabelNode.text = [NSString stringWithFormat:@"y: %.2f %.2f",
                             normPoint.y, [AudioController sharedInstance].touchY.currentFrequency];
 
 

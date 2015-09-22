@@ -35,15 +35,19 @@
         _amplitudeValue = [self createPropertyWithValue:0.5 minimum:0.0 maximum:1.0];
         
         
-        fmOscillator.baseFrequency = _frequencyValue;
-        fmOscillator.amplitude = _amplitudeValue;
-        fmOscillator.modulationIndex = _modIndexValue;
-        fmOscillator.carrierMultiplier = _carrierMultValue;
-        [self setAudioOutput:fmOscillator];
+//        fmOscillator.baseFrequency = _frequencyValue;
+//        fmOscillator.amplitude = _amplitudeValue;
+//        fmOscillator.modulationIndex = _modIndexValue;
+//        fmOscillator.carrierMultiplier = _carrierMultValue;
+//        [self setAudioOutput:fmOscillator];
         
         
         
-//        AKFlanger *flanger = [[AKFlanger alloc]initWithInput:fmOscillator delayTime:0.245];
+
+//        AKMandolin *mandolin = [[AKMandolin alloc]init];        
+//        AKOrchestra *orchestra = [[AKOrchestra alloc]init];
+//        [orchestra addInstrument:mandolin];
+        
 
 
         

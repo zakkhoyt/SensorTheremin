@@ -1,16 +1,14 @@
 PODS:
-  - AudioKit (2.1.1)
-  - GPUImage (0.1.7)
-  - VWWPermissionKit (1.1.2)
+  - AudioKit (2.2)
 
 DEPENDENCIES:
-  - AudioKit (~> 2.1.1)
-  - GPUImage
-  - VWWPermissionKit (~> 1.1.2)
+  - AudioKit (from `https://raw.githubusercontent.com/audiokit/AudioKit/master/AudioKit.podspec.json`)
+
+EXTERNAL SOURCES:
+  AudioKit:
+    :podspec: https://raw.githubusercontent.com/audiokit/AudioKit/master/AudioKit.podspec.json
 
 SPEC CHECKSUMS:
-  AudioKit: 54c92607d7c0fe14035793e81afe1717324ce5fa
-  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
-  VWWPermissionKit: b8da6b9f20c8c4375b2fac4144c7820e373ec6d5
+  AudioKit: e66c5b54d44b32f010267d7896e1dc51bf8de26c
 
 COCOAPODS: 0.38.2
