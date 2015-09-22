@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AKFoundation.h"
+
+
 #import "Instrument.h"
 //#import "OscillatorInstrument.h"
 #import "Oscillator.h"
@@ -17,4 +20,5 @@
 @property (nonatomic, strong) Instrument *touchX;
 @property (nonatomic, strong) Instrument *touchY;
 @property (nonatomic, strong) Oscillator *oscillator;
+@property (nonatomic, strong) AKTambourineInstrument *tambourine;
 @end

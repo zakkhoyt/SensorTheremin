@@ -80,7 +80,7 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     [[[AudioController sharedInstance] oscillator] play];
-    
+    [[[AudioController sharedInstance] tambourine] play];
     self.sparkEmitterNode.particleBirthRate = 200;
     [self.sparkEmitterNode resetSimulation];
     CGPoint point = [[touches anyObject] locationInNode:self];
@@ -95,11 +95,15 @@
     CGPoint point = [[touches anyObject] locationInNode:self];
     self.sparkEmitterNode.position = point;
     
+    
+
+    
 }
 
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     [[[AudioController sharedInstance] oscillator] stop];
+    [[[AudioController sharedInstance] tambourine] stop];
     
     CGPoint point = [[touches anyObject] locationInNode:self];
     self.sparkEmitterNode.position = point;
@@ -121,6 +125,13 @@
         CGPoint normPoint = [self normalizePoint:point];
         [[[AudioController sharedInstance] oscillator] setFrequency:normPoint.x * 1000];
         [[[AudioController sharedInstance] oscillator] setCarrier:normPoint.y];
+        
+        
+        AKTambourineNote *note = [[AKTambourineNote alloc] initWithIntensity:normPoint.y*4000 + 20
+                                                               dampingFactor:normPoint.x / 2.0];
+        [[[AudioController sharedInstance] tambourine] playNote:note];
+
+        
     }
 }
 

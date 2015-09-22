@@ -7,7 +7,8 @@
 //
 
 #import "AudioController.h"
-#import "AKFoundation.h"
+
+
 
 @interface AudioController ()
 
@@ -33,6 +34,14 @@
         
 //        self.oscillator = [[Oscillator alloc] init];
 //        [AKOrchestra addInstrument:self.oscillator];
+        
+        
+        
+         self.tambourine = [[AKTambourineInstrument alloc] init];
+//        self.tambourine.amplitude = 1.0;
+        [AKOrchestra addInstrument:self.tambourine];
+        
+        
 //
 //        self.touchX = [[Instrument alloc]init];
 //        self.touchX.minFrequency = 55.0;
@@ -42,10 +51,6 @@
         
         
         
-        AKInstrument *instrument = [AKInstrument instrument];
-        [instrument setAudioOutput:[AKOscillator oscillator]];
-        [AKOrchestra addInstrument:instrument];
-        [instrument play];
         
         
         
