@@ -10,7 +10,7 @@
 #import "ZHTouchScene.h"
 #import "ZHMotionMonitor.h"
 //#import "VWWPermissionKit.h"
-
+#import <SpriteKit/SpriteKit.h>
 #import "SKScene+Unarchive.h"
 
 

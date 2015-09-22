@@ -1,15 +1,15 @@
 //
 //  UIColor+VWW.m
-//  Peck
+//  sensorTheremin
 //
 //  Created by Zakk Hoyt on 4/21/15.
 //  Copyright (c) 2015 Zakk Hoyt. All rights reserved.
 //
 
-#import "UIColor+VWW.h"
+#import "UIColor+ZH.h"
 
 
-@implementation UIColor (Peck)
+@implementation UIColor (ZH)
 
 +(UIColor*)randomColor{
     return [UIColor randomColorWithAlpha:1.0];
@@ -34,37 +34,37 @@
 }
 
 
-#pragma mark Peck
+#pragma mark sensorTheremin
 
 
-+(UIColor*)peckPurpleColor{
++(UIColor*)sensorThereminPurpleColor{
     return [UIColor colorWithRed:(119/(float)0xFF) green:(76/(float)0xFF) blue:(121/(float)0xFF) alpha:1.0];
 }
 
-+(UIColor*)peckYellowColor{
++(UIColor*)sensorThereminYellowColor{
     return [UIColor colorWithRed:(246/(float)0xFF) green:(225/(float)0xFF) blue:(92/(float)0xFF) alpha:1.0];
 }
 
-+(UIColor*)peckRedColor{
++(UIColor*)sensorThereminRedColor{
     return [UIColor colorWithRed:(185/(float)0xFF) green:(73/(float)0xFF) blue:(57/(float)0xFF) alpha:1.0];
 }
-+(UIColor*)peckGreenColor{
++(UIColor*)sensorThereminGreenColor{
     return [UIColor colorWithRed:(0x8E/(float)0xFF) green:(0xC4/(float)0xFF) blue:(0x64/(float)0xFF) alpha:1.0];
     
 }
-+(UIColor*)peckBlackColor{
++(UIColor*)sensorThereminBlackColor{
     return [UIColor colorWithRed:(59/(float)0xFF) green:(71/(float)0xFF) blue:(80/(float)0xFF) alpha:1.0];
 }
 
-+(UIColor*)peckBlueColor{
++(UIColor*)sensorThereminBlueColor{
     return [UIColor colorWithRed:(02/(float)0xFF) green:(0xBA/(float)0xFF) blue:(0xDB/(float)0xFF) alpha:1.0];
 }
 
-+(UIColor*)peckOrangeColor{
++(UIColor*)sensorThereminOrangeColor{
     return [UIColor colorWithRed:(0xFF/(float)0xFF) green:(0x9F/(float)0xFF) blue:(0x00/(float)0xFF) alpha:1.0];
 }
 
-+(UIColor*)peckDimBackgroundColor{
++(UIColor*)sensorThereminDimBackgroundColor{
     return [[UIColor blackColor] colorWithAlphaComponent:0.5];
 }
 
@@ -80,43 +80,43 @@
 
 
 
-+(UIColor*)peckBackgroundColor{
++(UIColor*)sensorThereminBackgroundColor{
     return [UIColor colorWithRed:(86.3/(float)0xFF) green:(86.3/(float)0xFF) blue:(86.3/(float)0xFF) alpha:1.0];
 }
-+(UIColor*)peckTranslucentBackgroundColor{
-    return [[UIColor peckBackgroundColor] colorWithAlphaComponent:0.9];
++(UIColor*)sensorThereminTranslucentBackgroundColor{
+    return [[UIColor sensorThereminBackgroundColor] colorWithAlphaComponent:0.9];
 }
 
-+(UIColor*)peckTintColor{
++(UIColor*)sensorThereminTintColor{
     return [UIColor orangeColor];
 }
-+(UIColor*)peckAlternateTintColor{
++(UIColor*)sensorThereminAlternateTintColor{
     return [UIColor purpleColor];
 }
-+(UIColor*)peckLightTextColor{
++(UIColor*)sensorThereminLightTextColor{
     return [UIColor darkTextColor];
 }
-+(UIColor*)peckDarkTextColor{
++(UIColor*)sensorThereminDarkTextColor{
     return [UIColor lightTextColor];
 }
 
 #else 
-+(UIColor*)peckBackgroundColor{
++(UIColor*)sensorThereminBackgroundColor{
     return [UIColor colorWithRed:(243/(float)0xFF) green:(242/(float)0xFF) blue:(237/(float)0xFF) alpha:1.0];
 }
-+(UIColor*)peckTranslucentBackgroundColor{
-    return [[UIColor peckBackgroundColor] colorWithAlphaComponent:0.9];
++(UIColor*)sensorThereminTranslucentBackgroundColor{
+    return [[UIColor sensorThereminBackgroundColor] colorWithAlphaComponent:0.9];
 }
-+(UIColor*)peckTintColor{
++(UIColor*)sensorThereminTintColor{
     return [UIColor colorWithRed:(02/(float)0xFF) green:(0xBA/(float)0xFF) blue:(0xDB/(float)0xFF) alpha:1.0];
 }
-+(UIColor*)peckAlternateTintColor{
++(UIColor*)sensorThereminAlternateTintColor{
     return [UIColor colorWithRed:(0xFF/(float)0xFF) green:(0x9F/(float)0xFF) blue:(0x00/(float)0xFF) alpha:1.0];
 }
-+(UIColor*)peckLightTextColor{
++(UIColor*)sensorThereminLightTextColor{
     return [UIColor lightTextColor];
 }
-+(UIColor*)peckDarkTextColor{
++(UIColor*)sensorThereminDarkTextColor{
     return [UIColor darkTextColor];
 }
 
