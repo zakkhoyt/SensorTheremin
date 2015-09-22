@@ -18,6 +18,7 @@
 		C6A5B8421BB122A700AA0E7B /* ZHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A5B8411BB122A700AA0E7B /* ZHViewController.m */; };
 		C6A5B8451BB122B800AA0E7B /* ZHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A5B8441BB122B800AA0E7B /* ZHTableViewController.m */; };
 		C6A5B8481BB122CA00AA0E7B /* ZHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A5B8471BB122CA00AA0E7B /* ZHCollectionViewController.m */; };
+		C6A5B8511BB124A200AA0E7B /* ZHTrailEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = C6A5B8501BB124A200AA0E7B /* ZHTrailEmitter.sks */; };
 		C6CEAFB11BA90CBC00569A38 /* ZHNotes.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB01BA90CBC00569A38 /* ZHNotes.m */; };
 		C6CEAFB71BA90F3500569A38 /* ZHUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB61BA90F3500569A38 /* ZHUtilities.m */; };
 		C6CEAFC81BA91CEF00569A38 /* UIViewController+AlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFC31BA91CEF00569A38 /* UIViewController+AlertController.m */; };
@@ -82,6 +83,7 @@
 		C6A5B8461BB122CA00AA0E7B /* ZHCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCollectionViewController.h; sourceTree = "<group>"; };
 		C6A5B8471BB122CA00AA0E7B /* ZHCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCollectionViewController.m; sourceTree = "<group>"; };
 		C6A5B84A1BB1232500AA0E7B /* ZHViewImports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHViewImports.h; sourceTree = "<group>"; };
+		C6A5B8501BB124A200AA0E7B /* ZHTrailEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ZHTrailEmitter.sks; sourceTree = "<group>"; };
 		C6CEAFAF1BA90CBC00569A38 /* ZHNotes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNotes.h; sourceTree = "<group>"; };
 		C6CEAFB01BA90CBC00569A38 /* ZHNotes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNotes.m; sourceTree = "<group>"; };
 		C6CEAFB51BA90F3500569A38 /* ZHUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHUtilities.h; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 				C6FACC8F1BA8B35500976D09 /* ZHTouchScene.sks */,
 				C631A4BE1BB0B37D00A7A153 /* ZHSparkEmitter.sks */,
 				C631A4BF1BB0B37D00A7A153 /* spark.png */,
+				C6A5B8501BB124A200AA0E7B /* ZHTrailEmitter.sks */,
 			);
 			name = Sprite;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				C6CEAFD11BA9DB2400569A38 /* sdks.txt in Resources */,
 				C631A4C01BB0B37D00A7A153 /* ZHSparkEmitter.sks in Resources */,
 				C6FACC671BA8B26800976D09 /* Assets.xcassets in Resources */,
+				C6A5B8511BB124A200AA0E7B /* ZHTrailEmitter.sks in Resources */,
 				C631A4C11BB0B37D00A7A153 /* spark.png in Resources */,
 				C6FACC931BA8B35500976D09 /* ZHTouchScene.sks in Resources */,
 				C6FACC651BA8B26800976D09 /* Main.storyboard in Resources */,

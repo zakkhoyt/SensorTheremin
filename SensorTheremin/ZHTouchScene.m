@@ -18,6 +18,7 @@
 @property (nonatomic, strong) SKSpriteNode *touchXSprite;
 @property (nonatomic, strong) SKSpriteNode *touchYSprite;
 @property (nonatomic, strong) SKEmitterNode *sparkEmitterNode;
+@property (nonatomic, strong) SKEmitterNode *trailEmitterNode;
 @end
 
 @implementation ZHTouchScene
@@ -35,11 +36,21 @@
 }
 
 -(void)setupEmitter{
-    NSString *messagePath = [[NSBundle mainBundle] pathForResource:@"ZHSparkEmitter" ofType:@"sks"];
-    self.sparkEmitterNode = [NSKeyedUnarchiver unarchiveObjectWithFile:messagePath];
-    self.sparkEmitterNode.particleBirthRate = 0;
-    self.sparkEmitterNode.targetNode = self;
-    [self addChild:self.sparkEmitterNode];
+    {
+        NSString *messagePath = [[NSBundle mainBundle] pathForResource:@"ZHSparkEmitter" ofType:@"sks"];
+        self.sparkEmitterNode = [NSKeyedUnarchiver unarchiveObjectWithFile:messagePath];
+        self.sparkEmitterNode.particleBirthRate = 0;
+        self.sparkEmitterNode.targetNode = self;
+        [self addChild:self.sparkEmitterNode];
+    }
+    
+    {
+        NSString *messagePath = [[NSBundle mainBundle] pathForResource:@"ZHTrailEmitter" ofType:@"sks"];
+        self.trailEmitterNode = [NSKeyedUnarchiver unarchiveObjectWithFile:messagePath];
+        self.trailEmitterNode.particleBirthRate = 0;
+        self.trailEmitterNode.targetNode = self;
+        [self addChild:self.trailEmitterNode];
+    }
     
 }
 
@@ -75,10 +86,15 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     [[[ZHAudioController sharedInstance] oscillator] play];
+    
     self.sparkEmitterNode.particleBirthRate = 200;
     [self.sparkEmitterNode resetSimulation];
     CGPoint point = [[touches anyObject] locationInNode:self];
     self.sparkEmitterNode.position = point;
+    
+    self.trailEmitterNode.particleBirthRate = 1000;
+    [self.trailEmitterNode resetSimulation];
+    self.trailEmitterNode.position = point;
 }
 
 
@@ -88,9 +104,7 @@
     
     CGPoint point = [[touches anyObject] locationInNode:self];
     self.sparkEmitterNode.position = point;
-    
-    
-    
+    self.trailEmitterNode.position = point;
     
 }
 
@@ -100,14 +114,17 @@
     
     CGPoint point = [[touches anyObject] locationInNode:self];
     self.sparkEmitterNode.position = point;
+    self.trailEmitterNode.position = point;
     
     self.sparkEmitterNode.particleBirthRate = 0;
-    CGFloat delay = self.sparkEmitterNode.particleLifetime + self.sparkEmitterNode.particleLifetimeRange;
+    self.trailEmitterNode.particleBirthRate = 0;
     
-    SKAction *waitAction = [SKAction waitForDuration:delay];
-    [self.sparkEmitterNode runAction:waitAction completion:^{
-        NSLog(@"Remove");
-    }];
+//    CGFloat delay = self.sparkEmitterNode.particleLifetime + self.sparkEmitterNode.particleLifetimeRange;
+    
+//    SKAction *waitAction = [SKAction waitForDuration:delay];
+//    [self.sparkEmitterNode runAction:waitAction completion:^{
+//        NSLog(@"Remove");
+//    }];
     
     
 }

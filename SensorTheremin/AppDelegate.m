@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UIColor+ZH.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self setupAppearance];
     return YES;
 }
 
@@ -42,4 +43,50 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+-(void)setupAppearance{
+    
+    
+    // UIView (this is what controls the color of the back button arrow)
+    [[UIView appearance] setTintColor:[UIColor sensorThereminTintColor]];
+    [[UIView appearanceWhenContainedIn:[UINavigationBar class], nil] setTintColor:[UIColor sensorThereminBackgroundColor]];
+    
+    // Navigation bar
+    NSDictionary *navBarAttributes = @{NSForegroundColorAttributeName : [UIColor sensorThereminBackgroundColor]};
+    [[UINavigationBar appearance] setTitleTextAttributes:navBarAttributes];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor sensorThereminTintColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor sensorThereminBackgroundColor]];
+    // The nav bar back button
+    [[UIBarButtonItem appearance] setTitleTextAttributes:navBarAttributes forState:UIControlStateNormal];
+    
+    // Tabbar
+    [[UITabBar appearance] setBarTintColor:[UIColor sensorThereminBackgroundColor]];
+    [[UITabBar appearance] setTintColor:[UIColor sensorThereminTintColor]];
+    
+    // TabbarItem
+    NSDictionary *tabBarAttributes = @{NSForegroundColorAttributeName : [UIColor sensorThereminTintColor]};
+    [[UITabBarItem appearance] setTitleTextAttributes:tabBarAttributes forState:UIControlStateNormal];
+    
+    // Segmented control
+    NSDictionary *segmentAttributes = @{NSForegroundColorAttributeName : [UIColor sensorThereminTintColor],
+                                        NSStrokeColorAttributeName : [UIColor sensorThereminBackgroundColor]};
+    [[UISegmentedControl appearance] setTitleTextAttributes:segmentAttributes forState:UIControlStateNormal];
+    
+    // Toolbar
+    [[UIToolbar appearance] setBarTintColor:[UIColor sensorThereminBackgroundColor]];
+    [[UIToolbar appearance] setTintColor:[UIColor sensorThereminTintColor]];
+    
+    // Text controls
+    [[UITextView appearance] setTextColor:[UIColor sensorThereminDarkTextColor]];
+    [[UITextField appearance] setTextColor:[UIColor sensorThereminDarkTextColor]];
+    
+    [[UITableView appearance] setBackgroundColor:[UIColor sensorThereminBackgroundColor]];
+    [[UITableViewCell appearance] setBackgroundColor:[UIColor sensorThereminBackgroundColor]];
+    
+    [[UICollectionView appearance] setBackgroundColor:[UIColor sensorThereminBackgroundColor]];
+    [[UICollectionViewCell appearance]setBackgroundColor:[UIColor sensorThereminBackgroundColor]];
+    
+    [[UIButton appearance]setTintColor:[UIColor sensorThereminTintColor]];
+    
+}
 @end
