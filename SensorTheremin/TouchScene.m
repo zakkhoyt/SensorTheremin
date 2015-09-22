@@ -8,18 +8,22 @@
 
 #import "TouchScene.h"
 #import "Utilities.h"
-#import "AudioController.h"
+//#import "AudioController.h"
+#import "AKFoundation.h"
 
 
-
-@interface TouchScene ()
+@interface TouchScene (){
+    IBOutlet UIView *fmSynthesizerTouchView;
+    IBOutlet UIView *tambourineTouchView;
+    
+    AKTambourineInstrument *tambourine;
+//    FMSynthesizer *fmSynthesizer;
+}
 @property (nonatomic, strong) SKLabelNode *xLabelNode;
 @property (nonatomic, strong) SKLabelNode *yLabelNode;
 @property (nonatomic, strong) SKSpriteNode *touchXSprite;
 @property (nonatomic, strong) SKSpriteNode *touchYSprite;
 @property (nonatomic, strong) SKEmitterNode *sparkEmitterNode;
-
-
 @end
 
 @implementation TouchScene
@@ -28,15 +32,21 @@
     
     [self setupEmitter];
     [self setupLabels];
+    [self setupInstruments];
+    
 }
 
 -(void)setupInstruments{
     
     
-    [AudioController sharedInstance];
+//    [AudioController sharedInstance];
     
+    tambourine = [[AKTambourineInstrument alloc] init];
+    [AKOrchestra addInstrument:tambourine];
     
-
+    AKAmplifier *amp = [[AKAmplifier alloc] initWithInput:tambourine.output];
+    [AKOrchestra addInstrument:amp];
+    [amp start];
 }
 
 -(void)setupEmitter{
@@ -79,12 +89,18 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    [[[AudioController sharedInstance] oscillator] play];
-    [[[AudioController sharedInstance] tambourine] play];
+//    [[[AudioController sharedInstance] oscillator] play];
+//    [[[AudioController sharedInstance] tambourine] play];
     self.sparkEmitterNode.particleBirthRate = 200;
     [self.sparkEmitterNode resetSimulation];
     CGPoint point = [[touches anyObject] locationInNode:self];
     self.sparkEmitterNode.position = point;
+    
+    
+
+    UITouch *touch = [touches anyObject];
+    CGPoint p = [touch locationInNode:self];
+    [self tapTambourineAtPoint:p];
 }
 
 
@@ -102,8 +118,8 @@
 
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    [[[AudioController sharedInstance] oscillator] stop];
-    [[[AudioController sharedInstance] tambourine] stop];
+//    [[[AudioController sharedInstance] oscillator] stop];
+//    [[[AudioController sharedInstance] tambourine] stop];
     
     CGPoint point = [[touches anyObject] locationInNode:self];
     self.sparkEmitterNode.position = point;
@@ -123,13 +139,13 @@
     for (UITouch *touch in touches) {
         CGPoint point = [touch locationInNode:self];
         CGPoint normPoint = [self normalizePoint:point];
-        [[[AudioController sharedInstance] oscillator] setFrequency:normPoint.x * 1000];
-        [[[AudioController sharedInstance] oscillator] setCarrier:normPoint.y];
+//        [[[AudioController sharedInstance] oscillator] setFrequency:normPoint.x * 1000];
+//        [[[AudioController sharedInstance] oscillator] setCarrier:normPoint.y];
         
         
-        AKTambourineNote *note = [[AKTambourineNote alloc] initWithIntensity:normPoint.y*4000 + 20
-                                                               dampingFactor:normPoint.x / 2.0];
-        [[[AudioController sharedInstance] tambourine] playNote:note];
+        AKTambourineNote *note = [[AKTambourineNote alloc] initWithIntensity:128
+                                                               dampingFactor:normPoint.x / self.view.bounds.size.width];
+//        [[[AudioController sharedInstance] tambourine] playNote:note];
 
         
     }
@@ -149,11 +165,11 @@
     CGPoint normPoint = CGPointZero;
     normPoint.x = [Utilities mapInValue:point.x inMinimum:0 inMaximum:self.frame.size.width outMinimum:0.0 outMaximum:1.0];
     normPoint.y = [Utilities mapInValue:point.y inMinimum:0 inMaximum:self.frame.size.height outMinimum:0.0 outMaximum:1.0];
-    self.xLabelNode.text = [NSString stringWithFormat:@"x: %.2f %.2f",
-                            normPoint.x, [AudioController sharedInstance].touchX.currentFrequency];
-
-    self.yLabelNode.text = [NSString stringWithFormat:@"y: %.2f %.2f",
-                            normPoint.y, [AudioController sharedInstance].touchY.currentFrequency];
+//    self.xLabelNode.text = [NSString stringWithFormat:@"x: %.2f %.2f",
+//                            normPoint.x, [AudioController sharedInstance].touchX.currentFrequency];
+//
+//    self.yLabelNode.text = [NSString stringWithFormat:@"y: %.2f %.2f",
+//                            normPoint.y, [AudioController sharedInstance].touchY.currentFrequency];
 
 
     return normPoint;
@@ -179,6 +195,19 @@
 //
 //}
 
+
+-(void)tapTambourineAtPoint:(CGPoint)touchPoint{
+//    CGPoint touchPoint = [sender locationInView:tambourineTouchView];
+    float scaledX = touchPoint.x / self.view.bounds.size.width;
+    float scaledY = 1.0 - touchPoint.y / self.view.bounds.size.height;
+    
+    float intensity = scaledY*4000 + 20;
+    float dampingFactor = scaledX / 2.0;
+    AKTambourineNote *note = [[AKTambourineNote alloc] initWithIntensity:intensity
+                                                           dampingFactor:dampingFactor];
+    [tambourine playNote:note];
+
+}
 
 
 

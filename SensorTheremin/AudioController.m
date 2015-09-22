@@ -11,7 +11,7 @@
 
 
 @interface AudioController ()
-
+@property (nonatomic, strong) AKAmplifier *amp;
 @end
 
 @implementation AudioController{
@@ -23,7 +23,7 @@
 +(AudioController*)sharedInstance{
     static AudioController *instance;
     if(instance == nil){
-        instance = [[AudioController alloc]init];
+//        instance = [[AudioController alloc]init];
     }
     return instance;
 }
@@ -39,9 +39,9 @@
         
          self.tambourine = [[AKTambourineInstrument alloc] init];
 //        self.tambourine.amplitude = 1.0;
-        [AKOrchestra addInstrument:self.tambourine];
-        
-        
+        self.amp = [[AKAmplifier alloc] initWithInput:self.tambourine.output];
+        [AKOrchestra addInstrument:self.amp];
+        [self.amp start];
 //
 //        self.touchX = [[Instrument alloc]init];
 //        self.touchX.minFrequency = 55.0;

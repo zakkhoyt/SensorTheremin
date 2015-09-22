@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SensorTheremin/TouchScene.m"
-            timestampString = "464566207.133968"
+            timestampString = "464589785.666347"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "-setupEmitter"
             landmarkType = "5">
          </BreakpointContent>
@@ -112,17 +112,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SensorTheremin/TouchScene.m"
-            timestampString = "464588706.668221"
+            timestampString = "464589785.666347"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "-convertTouches:withEvent:"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TouchScene convertTouches:withEvent:]"
+                  moduleName = "SensorTheremin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zakkhoyt/Code/repositories/vwwGithub/SensorTheremin/SensorTheremin/TouchScene.m"
+                  timestampString = "464588853.859797"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "995">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TouchScene convertTouches:withEvent:]"
+                  moduleName = "SensorTheremin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zakkhoyt/Code/repositories/vwwGithub/SensorTheremin/SensorTheremin/TouchScene.m"
+                  timestampString = "464588853.859985"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "1003">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
