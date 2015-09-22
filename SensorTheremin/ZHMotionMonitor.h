@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Sensor.h"
+#import "ZHSensor.h"
 
-@interface MotionMonitor : NSObject
+@interface ZHMotionMonitor : NSObject
 
-+(MotionMonitor*)sharedInstance;
++(ZHMotionMonitor*)sharedInstance;
 
 -(void)start;
 -(void)stop;
 
 // KVO observable
-@property (nonatomic, strong, readonly) Sensor *sensor;
+@property (nonatomic, strong, readonly) ZHSensor *sensor;
 @end

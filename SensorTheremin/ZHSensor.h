@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Sensor : NSObject
+@interface ZHSensor : NSObject
 
 - (instancetype)initWithX:(CGFloat)x Y:(CGFloat)y Z:(CGFloat)z;
 - (instancetype)initWithRoll:(CGFloat)roll pitch:(CGFloat)pitch yaw:(CGFloat)yaw;

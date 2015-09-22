@@ -8,7 +8,7 @@
 
 #import "AKFoundation.h"
 
-@interface VariableDelay : AKInstrument
+@interface ZHVariableDelay : AKInstrument
 
 @property (nonatomic, strong) AKInstrumentProperty *delayTime;
 @property (nonatomic, strong) AKInstrumentProperty *mix;

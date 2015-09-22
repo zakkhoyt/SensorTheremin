@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Utilities : NSObject
+@interface ZHUtilities : NSObject
 
 +(CGFloat)mapNormalizedValue:(CGFloat)normalizedValue
                      minimum:(CGFloat)minimum

@@ -6,10 +6,10 @@
 //  Copyright (c) 2012 Zakk Hoyt. All rights reserved.
 //
 
-#import "Notes.h"
+#import "ZHNotes.h"
 
 
-@interface Notes ()
+@interface ZHNotes ()
 @property (nonatomic, strong) NSArray* notesInChromatic;
 @property (nonatomic, strong) NSArray* notesInAMinor;
 @property (nonatomic, strong) NSArray* notesInAMajor;
@@ -29,14 +29,14 @@
 -(void)initializeClass;
 @end
 
-@implementation Notes
+@implementation ZHNotes
 
 
-+(Notes *)sharedInstance{
-    static Notes* instance;
++(ZHNotes *)sharedInstance{
+    static ZHNotes* instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [[Notes alloc]init];
+        instance = [[ZHNotes alloc]init];
     });
     return instance;
 }
@@ -69,9 +69,9 @@
 
 
 +(float)getClosestNoteForFrequency:(float)frequency{
-    Notes *notes = [Notes sharedInstance];
+    ZHNotes *notes = [ZHNotes sharedInstance];
     NSArray *notesForKey = notes.notesInChromatic;
-    return [[Notes sharedInstance]getClosestNoteForFrequency:frequency notes:notesForKey];
+    return [[ZHNotes sharedInstance]getClosestNoteForFrequency:frequency notes:notesForKey];
 }
 
 //+(float)getClosestNoteForFrequency:(float)frequency inKey:(VWWAutoTuneType)key{

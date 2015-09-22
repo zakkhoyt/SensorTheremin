@@ -8,27 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1A53C3360B21DF7E19F11A6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB31F260A43435A29AD1E0F /* libPods.a */; };
-		C614B85F1BAE80FF00E57117 /* OscillatorInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = C614B85E1BAE80FF00E57117 /* OscillatorInstrument.m */; };
-		C614B8651BAE83B700E57117 /* Oscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = C614B8641BAE83B700E57117 /* Oscillator.m */; };
+		C614B8651BAE83B700E57117 /* ZHOscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = C614B8641BAE83B700E57117 /* ZHOscillator.m */; };
 		C631A4B91BB0B0FD00A7A153 /* SKScene+Unarchive.m in Sources */ = {isa = PBXBuildFile; fileRef = C631A4B81BB0B0FD00A7A153 /* SKScene+Unarchive.m */; };
-		C631A4BC1BB0B33700A7A153 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C631A4BB1BB0B33700A7A153 /* SettingsTableViewController.m */; };
-		C631A4C01BB0B37D00A7A153 /* SparkEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = C631A4BE1BB0B37D00A7A153 /* SparkEmitter.sks */; };
+		C631A4BC1BB0B33700A7A153 /* ZHSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C631A4BB1BB0B33700A7A153 /* ZHSettingsTableViewController.m */; };
+		C631A4C01BB0B37D00A7A153 /* ZHSparkEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = C631A4BE1BB0B37D00A7A153 /* ZHSparkEmitter.sks */; };
 		C631A4C11BB0B37D00A7A153 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = C631A4BF1BB0B37D00A7A153 /* spark.png */; };
-		C631A4CA1BB0C05F00A7A153 /* VariableDelay.m in Sources */ = {isa = PBXBuildFile; fileRef = C631A4C91BB0C05F00A7A153 /* VariableDelay.m */; };
-		C6CEAFB11BA90CBC00569A38 /* Notes.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB01BA90CBC00569A38 /* Notes.m */; };
-		C6CEAFB41BA90E8700569A38 /* Instrument.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB31BA90E8700569A38 /* Instrument.m */; };
-		C6CEAFB71BA90F3500569A38 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB61BA90F3500569A38 /* Utilities.m */; };
-		C6CEAFBE1BA91CD400569A38 /* Conductor.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB91BA91CD400569A38 /* Conductor.m */; };
-		C6CEAFBF1BA91CD400569A38 /* EffectsProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFBB1BA91CD400569A38 /* EffectsProcessor.m */; };
-		C6CEAFC01BA91CD400569A38 /* ToneGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFBD1BA91CD400569A38 /* ToneGenerator.m */; };
+		C631A4CA1BB0C05F00A7A153 /* ZHVariableDelay.m in Sources */ = {isa = PBXBuildFile; fileRef = C631A4C91BB0C05F00A7A153 /* ZHVariableDelay.m */; };
+		C6A5B83F1BB11B2800AA0E7B /* ZHCameraMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A5B83E1BB11B2800AA0E7B /* ZHCameraMonitor.m */; };
+		C6CEAFB11BA90CBC00569A38 /* ZHNotes.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB01BA90CBC00569A38 /* ZHNotes.m */; };
+		C6CEAFB71BA90F3500569A38 /* ZHUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFB61BA90F3500569A38 /* ZHUtilities.m */; };
 		C6CEAFC81BA91CEF00569A38 /* UIViewController+AlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFC31BA91CEF00569A38 /* UIViewController+AlertController.m */; };
 		C6CEAFC91BA91CEF00569A38 /* UIColor+VWW.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFC51BA91CEF00569A38 /* UIColor+VWW.m */; };
 		C6CEAFCA1BA91CEF00569A38 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CEAFC71BA91CEF00569A38 /* NSTimer+Blocks.m */; };
 		C6CEAFD11BA9DB2400569A38 /* sdks.txt in Resources */ = {isa = PBXBuildFile; fileRef = C6CEAFD01BA9DB2400569A38 /* sdks.txt */; };
 		C6CEAFD41BA9DB3A00569A38 /* notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = C6CEAFD31BA9DB3A00569A38 /* notes.txt */; };
-		C6FA4CC91BB108730070E038 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA4CC81BB108730070E038 /* AudioController.m */; };
-		C6FA4CCE1BB1088B0070E038 /* SensorInput.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA4CCB1BB1088B0070E038 /* SensorInput.m */; };
-		C6FA4CCF1BB1088B0070E038 /* Sensors.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA4CCD1BB1088B0070E038 /* Sensors.m */; };
+		C6FA4CC91BB108730070E038 /* ZHAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA4CC81BB108730070E038 /* ZHAudioController.m */; };
+		C6FA4CCE1BB1088B0070E038 /* ZHSensorInput.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA4CCB1BB1088B0070E038 /* ZHSensorInput.m */; };
+		C6FA4CCF1BB1088B0070E038 /* ZHSensors.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA4CCD1BB1088B0070E038 /* ZHSensors.m */; };
 		C6FACC5C1BA8B26800976D09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC5B1BA8B26800976D09 /* main.m */; };
 		C6FACC5F1BA8B26800976D09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC5E1BA8B26800976D09 /* AppDelegate.m */; };
 		C6FACC651BA8B26800976D09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FACC631BA8B26800976D09 /* Main.storyboard */; };
@@ -36,11 +32,11 @@
 		C6FACC6A1BA8B26800976D09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FACC681BA8B26800976D09 /* LaunchScreen.storyboard */; };
 		C6FACC751BA8B26800976D09 /* SensorThereminTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC741BA8B26800976D09 /* SensorThereminTests.m */; };
 		C6FACC801BA8B26800976D09 /* SensorThereminUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC7F1BA8B26800976D09 /* SensorThereminUITests.m */; };
-		C6FACC921BA8B35500976D09 /* TouchScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC8E1BA8B35500976D09 /* TouchScene.m */; };
-		C6FACC931BA8B35500976D09 /* TouchScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C6FACC8F1BA8B35500976D09 /* TouchScene.sks */; };
-		C6FACC941BA8B35500976D09 /* TouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC911BA8B35500976D09 /* TouchViewController.m */; };
-		C6FACC9C1BA8B3E300976D09 /* MotionMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC9B1BA8B3E300976D09 /* MotionMonitor.m */; };
-		C6FACCA01BA8B52400976D09 /* Sensor.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC9F1BA8B52400976D09 /* Sensor.m */; };
+		C6FACC921BA8B35500976D09 /* ZHTouchScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC8E1BA8B35500976D09 /* ZHTouchScene.m */; };
+		C6FACC931BA8B35500976D09 /* ZHTouchScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C6FACC8F1BA8B35500976D09 /* ZHTouchScene.sks */; };
+		C6FACC941BA8B35500976D09 /* ZHTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC911BA8B35500976D09 /* ZHTouchViewController.m */; };
+		C6FACC9C1BA8B3E300976D09 /* ZHMotionMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC9B1BA8B3E300976D09 /* ZHMotionMonitor.m */; };
+		C6FACCA01BA8B52400976D09 /* ZHSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FACC9F1BA8B52400976D09 /* ZHSensor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,31 +59,23 @@
 /* Begin PBXFileReference section */
 		7CB31F260A43435A29AD1E0F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E6F9CBD2BA672284A20D54 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		C614B85D1BAE80FF00E57117 /* OscillatorInstrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscillatorInstrument.h; sourceTree = "<group>"; };
-		C614B85E1BAE80FF00E57117 /* OscillatorInstrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OscillatorInstrument.m; sourceTree = "<group>"; };
-		C614B8631BAE83B700E57117 /* Oscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Oscillator.h; sourceTree = "<group>"; };
-		C614B8641BAE83B700E57117 /* Oscillator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Oscillator.m; sourceTree = "<group>"; };
+		C614B8631BAE83B700E57117 /* ZHOscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHOscillator.h; sourceTree = "<group>"; };
+		C614B8641BAE83B700E57117 /* ZHOscillator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHOscillator.m; sourceTree = "<group>"; };
 		C631A4B71BB0B0FD00A7A153 /* SKScene+Unarchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKScene+Unarchive.h"; sourceTree = "<group>"; };
 		C631A4B81BB0B0FD00A7A153 /* SKScene+Unarchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKScene+Unarchive.m"; sourceTree = "<group>"; };
-		C631A4BA1BB0B33700A7A153 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
-		C631A4BB1BB0B33700A7A153 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
-		C631A4BE1BB0B37D00A7A153 /* SparkEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SparkEmitter.sks; sourceTree = "<group>"; };
+		C631A4BA1BB0B33700A7A153 /* ZHSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHSettingsTableViewController.h; sourceTree = "<group>"; };
+		C631A4BB1BB0B33700A7A153 /* ZHSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHSettingsTableViewController.m; sourceTree = "<group>"; };
+		C631A4BE1BB0B37D00A7A153 /* ZHSparkEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ZHSparkEmitter.sks; sourceTree = "<group>"; };
 		C631A4BF1BB0B37D00A7A153 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		C631A4C81BB0C05F00A7A153 /* VariableDelay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariableDelay.h; sourceTree = "<group>"; };
-		C631A4C91BB0C05F00A7A153 /* VariableDelay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariableDelay.m; sourceTree = "<group>"; };
-		C680BF101BB0EEE400E58F43 /* AKSoundFiles.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AKSoundFiles.bundle; sourceTree = "<group>"; };
-		C6CEAFAF1BA90CBC00569A38 /* Notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notes.h; sourceTree = "<group>"; };
-		C6CEAFB01BA90CBC00569A38 /* Notes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notes.m; sourceTree = "<group>"; };
-		C6CEAFB21BA90E8700569A38 /* Instrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instrument.h; sourceTree = "<group>"; };
-		C6CEAFB31BA90E8700569A38 /* Instrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instrument.m; sourceTree = "<group>"; };
-		C6CEAFB51BA90F3500569A38 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
-		C6CEAFB61BA90F3500569A38 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
-		C6CEAFB81BA91CD400569A38 /* Conductor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conductor.h; sourceTree = "<group>"; };
-		C6CEAFB91BA91CD400569A38 /* Conductor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conductor.m; sourceTree = "<group>"; };
-		C6CEAFBA1BA91CD400569A38 /* EffectsProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectsProcessor.h; sourceTree = "<group>"; };
-		C6CEAFBB1BA91CD400569A38 /* EffectsProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EffectsProcessor.m; sourceTree = "<group>"; };
-		C6CEAFBC1BA91CD400569A38 /* ToneGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToneGenerator.h; sourceTree = "<group>"; };
-		C6CEAFBD1BA91CD400569A38 /* ToneGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToneGenerator.m; sourceTree = "<group>"; };
+		C631A4C81BB0C05F00A7A153 /* ZHVariableDelay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHVariableDelay.h; sourceTree = "<group>"; };
+		C631A4C91BB0C05F00A7A153 /* ZHVariableDelay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHVariableDelay.m; sourceTree = "<group>"; };
+		C680BF101BB0EEE400E58F43 /* AKSoundFiles.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AKSoundFiles.bundle; path = ../AKSoundFiles.bundle; sourceTree = "<group>"; };
+		C6A5B83D1BB11B2800AA0E7B /* ZHCameraMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHCameraMonitor.h; path = SensorTheremin/ZHCameraMonitor.h; sourceTree = "<group>"; };
+		C6A5B83E1BB11B2800AA0E7B /* ZHCameraMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHCameraMonitor.m; path = SensorTheremin/ZHCameraMonitor.m; sourceTree = "<group>"; };
+		C6CEAFAF1BA90CBC00569A38 /* ZHNotes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNotes.h; sourceTree = "<group>"; };
+		C6CEAFB01BA90CBC00569A38 /* ZHNotes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNotes.m; sourceTree = "<group>"; };
+		C6CEAFB51BA90F3500569A38 /* ZHUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHUtilities.h; sourceTree = "<group>"; };
+		C6CEAFB61BA90F3500569A38 /* ZHUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHUtilities.m; sourceTree = "<group>"; };
 		C6CEAFC21BA91CEF00569A38 /* UIViewController+AlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AlertController.h"; sourceTree = "<group>"; };
 		C6CEAFC31BA91CEF00569A38 /* UIViewController+AlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AlertController.m"; sourceTree = "<group>"; };
 		C6CEAFC41BA91CEF00569A38 /* UIColor+VWW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VWW.h"; sourceTree = "<group>"; };
@@ -96,12 +84,12 @@
 		C6CEAFC71BA91CEF00569A38 /* NSTimer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Blocks.m"; sourceTree = "<group>"; };
 		C6CEAFD01BA9DB2400569A38 /* sdks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sdks.txt; sourceTree = "<group>"; };
 		C6CEAFD31BA9DB3A00569A38 /* notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
-		C6FA4CC71BB108730070E038 /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioController.h; path = SensorTheremin/AudioController.h; sourceTree = "<group>"; };
-		C6FA4CC81BB108730070E038 /* AudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioController.m; path = SensorTheremin/AudioController.m; sourceTree = "<group>"; };
-		C6FA4CCA1BB1088B0070E038 /* SensorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SensorInput.h; path = SensorTheremin/SensorInput.h; sourceTree = "<group>"; };
-		C6FA4CCB1BB1088B0070E038 /* SensorInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SensorInput.m; path = SensorTheremin/SensorInput.m; sourceTree = "<group>"; };
-		C6FA4CCC1BB1088B0070E038 /* Sensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sensors.h; path = SensorTheremin/Sensors.h; sourceTree = "<group>"; };
-		C6FA4CCD1BB1088B0070E038 /* Sensors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sensors.m; path = SensorTheremin/Sensors.m; sourceTree = "<group>"; };
+		C6FA4CC71BB108730070E038 /* ZHAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHAudioController.h; path = SensorTheremin/ZHAudioController.h; sourceTree = "<group>"; };
+		C6FA4CC81BB108730070E038 /* ZHAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHAudioController.m; path = SensorTheremin/ZHAudioController.m; sourceTree = "<group>"; };
+		C6FA4CCA1BB1088B0070E038 /* ZHSensorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHSensorInput.h; path = SensorTheremin/ZHSensorInput.h; sourceTree = "<group>"; };
+		C6FA4CCB1BB1088B0070E038 /* ZHSensorInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHSensorInput.m; path = SensorTheremin/ZHSensorInput.m; sourceTree = "<group>"; };
+		C6FA4CCC1BB1088B0070E038 /* ZHSensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHSensors.h; path = SensorTheremin/ZHSensors.h; sourceTree = "<group>"; };
+		C6FA4CCD1BB1088B0070E038 /* ZHSensors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHSensors.m; path = SensorTheremin/ZHSensors.m; sourceTree = "<group>"; };
 		C6FACC571BA8B26800976D09 /* SensorTheremin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensorTheremin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FACC5B1BA8B26800976D09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6FACC5D1BA8B26800976D09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,15 +104,15 @@
 		C6FACC7B1BA8B26800976D09 /* SensorThereminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SensorThereminUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FACC7F1BA8B26800976D09 /* SensorThereminUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorThereminUITests.m; sourceTree = "<group>"; };
 		C6FACC811BA8B26800976D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6FACC8D1BA8B35500976D09 /* TouchScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchScene.h; sourceTree = "<group>"; };
-		C6FACC8E1BA8B35500976D09 /* TouchScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchScene.m; sourceTree = "<group>"; };
-		C6FACC8F1BA8B35500976D09 /* TouchScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TouchScene.sks; sourceTree = "<group>"; };
-		C6FACC901BA8B35500976D09 /* TouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchViewController.h; sourceTree = "<group>"; };
-		C6FACC911BA8B35500976D09 /* TouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchViewController.m; sourceTree = "<group>"; };
-		C6FACC9A1BA8B3E300976D09 /* MotionMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MotionMonitor.h; path = SensorTheremin/MotionMonitor.h; sourceTree = "<group>"; };
-		C6FACC9B1BA8B3E300976D09 /* MotionMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MotionMonitor.m; path = SensorTheremin/MotionMonitor.m; sourceTree = "<group>"; };
-		C6FACC9E1BA8B52400976D09 /* Sensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sensor.h; path = SensorTheremin/Sensor.h; sourceTree = "<group>"; };
-		C6FACC9F1BA8B52400976D09 /* Sensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sensor.m; path = SensorTheremin/Sensor.m; sourceTree = "<group>"; };
+		C6FACC8D1BA8B35500976D09 /* ZHTouchScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHTouchScene.h; sourceTree = "<group>"; };
+		C6FACC8E1BA8B35500976D09 /* ZHTouchScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHTouchScene.m; sourceTree = "<group>"; };
+		C6FACC8F1BA8B35500976D09 /* ZHTouchScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ZHTouchScene.sks; sourceTree = "<group>"; };
+		C6FACC901BA8B35500976D09 /* ZHTouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHTouchViewController.h; sourceTree = "<group>"; };
+		C6FACC911BA8B35500976D09 /* ZHTouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHTouchViewController.m; sourceTree = "<group>"; };
+		C6FACC9A1BA8B3E300976D09 /* ZHMotionMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHMotionMonitor.h; path = SensorTheremin/ZHMotionMonitor.h; sourceTree = "<group>"; };
+		C6FACC9B1BA8B3E300976D09 /* ZHMotionMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHMotionMonitor.m; path = SensorTheremin/ZHMotionMonitor.m; sourceTree = "<group>"; };
+		C6FACC9E1BA8B52400976D09 /* ZHSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHSensor.h; path = SensorTheremin/ZHSensor.h; sourceTree = "<group>"; };
+		C6FACC9F1BA8B52400976D09 /* ZHSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHSensor.m; path = SensorTheremin/ZHSensor.m; sourceTree = "<group>"; };
 		FDC2A2D7C08DDBD42B258F76 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,22 +151,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C614B85C1BAE80DA00E57117 /* Table */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Table;
-			sourceTree = "<group>";
-		};
 		C614B8661BAE83BA00E57117 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				C631A4C81BB0C05F00A7A153 /* VariableDelay.h */,
-				C631A4C91BB0C05F00A7A153 /* VariableDelay.m */,
-				C614B8631BAE83B700E57117 /* Oscillator.h */,
-				C614B8641BAE83B700E57117 /* Oscillator.m */,
-				C614B85D1BAE80FF00E57117 /* OscillatorInstrument.h */,
-				C614B85E1BAE80FF00E57117 /* OscillatorInstrument.m */,
+				C631A4C81BB0C05F00A7A153 /* ZHVariableDelay.h */,
+				C631A4C91BB0C05F00A7A153 /* ZHVariableDelay.m */,
+				C614B8631BAE83B700E57117 /* ZHOscillator.h */,
+				C614B8641BAE83B700E57117 /* ZHOscillator.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -186,8 +165,8 @@
 		C631A4BD1BB0B33B00A7A153 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				C631A4BA1BB0B33700A7A153 /* SettingsTableViewController.h */,
-				C631A4BB1BB0B33700A7A153 /* SettingsTableViewController.m */,
+				C631A4BA1BB0B33700A7A153 /* ZHSettingsTableViewController.h */,
+				C631A4BB1BB0B33700A7A153 /* ZHSettingsTableViewController.m */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -195,8 +174,6 @@
 		C631A4CB1BB0C07400A7A153 /* Orchestra */ = {
 			isa = PBXGroup;
 			children = (
-				C6CEAFB21BA90E8700569A38 /* Instrument.h */,
-				C6CEAFB31BA90E8700569A38 /* Instrument.m */,
 				C614B8661BAE83BA00E57117 /* Custom */,
 			);
 			name = Orchestra;
@@ -206,9 +183,8 @@
 		C680BF071BB0EABC00E58F43 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				C6FA4CC71BB108730070E038 /* AudioController.h */,
-				C6FA4CC81BB108730070E038 /* AudioController.m */,
-				C680BF101BB0EEE400E58F43 /* AKSoundFiles.bundle */,
+				C6FA4CC71BB108730070E038 /* ZHAudioController.h */,
+				C6FA4CC81BB108730070E038 /* ZHAudioController.m */,
 				C631A4CB1BB0C07400A7A153 /* Orchestra */,
 			);
 			name = Audio;
@@ -217,29 +193,18 @@
 		C680BF081BB0EACC00E58F43 /* Sensors */ = {
 			isa = PBXGroup;
 			children = (
-				C6FA4CCA1BB1088B0070E038 /* SensorInput.h */,
-				C6FA4CCB1BB1088B0070E038 /* SensorInput.m */,
-				C6FA4CCC1BB1088B0070E038 /* Sensors.h */,
-				C6FA4CCD1BB1088B0070E038 /* Sensors.m */,
-				C6FACC9A1BA8B3E300976D09 /* MotionMonitor.h */,
-				C6FACC9B1BA8B3E300976D09 /* MotionMonitor.m */,
-				C6FACC9E1BA8B52400976D09 /* Sensor.h */,
-				C6FACC9F1BA8B52400976D09 /* Sensor.m */,
+				C6FA4CCA1BB1088B0070E038 /* ZHSensorInput.h */,
+				C6FA4CCB1BB1088B0070E038 /* ZHSensorInput.m */,
+				C6FACC9E1BA8B52400976D09 /* ZHSensor.h */,
+				C6FACC9F1BA8B52400976D09 /* ZHSensor.m */,
+				C6FA4CCC1BB1088B0070E038 /* ZHSensors.h */,
+				C6FA4CCD1BB1088B0070E038 /* ZHSensors.m */,
+				C6FACC9A1BA8B3E300976D09 /* ZHMotionMonitor.h */,
+				C6FACC9B1BA8B3E300976D09 /* ZHMotionMonitor.m */,
+				C6A5B83D1BB11B2800AA0E7B /* ZHCameraMonitor.h */,
+				C6A5B83E1BB11B2800AA0E7B /* ZHCameraMonitor.m */,
 			);
 			name = Sensors;
-			sourceTree = "<group>";
-		};
-		C6CEAFC11BA91CD800569A38 /* Synth */ = {
-			isa = PBXGroup;
-			children = (
-				C6CEAFB81BA91CD400569A38 /* Conductor.h */,
-				C6CEAFB91BA91CD400569A38 /* Conductor.m */,
-				C6CEAFBA1BA91CD400569A38 /* EffectsProcessor.h */,
-				C6CEAFBB1BA91CD400569A38 /* EffectsProcessor.m */,
-				C6CEAFBC1BA91CD400569A38 /* ToneGenerator.h */,
-				C6CEAFBD1BA91CD400569A38 /* ToneGenerator.m */,
-			);
-			name = Synth;
 			sourceTree = "<group>";
 		};
 		C6CEAFCB1BA91CF400569A38 /* Categories */ = {
@@ -291,6 +256,7 @@
 		C6FACC591BA8B26800976D09 /* SensorTheremin */ = {
 			isa = PBXGroup;
 			children = (
+				C680BF101BB0EEE400E58F43 /* AKSoundFiles.bundle */,
 				C6CEAFD21BA9DB2800569A38 /* Documents */,
 				C6CEAFCB1BA91CF400569A38 /* Categories */,
 				C6FACC9D1BA8B49700976D09 /* Model */,
@@ -334,11 +300,9 @@
 		C6FACC951BA8B35B00976D09 /* Touch */ = {
 			isa = PBXGroup;
 			children = (
-				C614B85C1BAE80DA00E57117 /* Table */,
-				C6CEAFC11BA91CD800569A38 /* Synth */,
 				C6FACC961BA8B36700976D09 /* Sprite */,
-				C6FACC901BA8B35500976D09 /* TouchViewController.h */,
-				C6FACC911BA8B35500976D09 /* TouchViewController.m */,
+				C6FACC901BA8B35500976D09 /* ZHTouchViewController.h */,
+				C6FACC911BA8B35500976D09 /* ZHTouchViewController.m */,
 			);
 			name = Touch;
 			sourceTree = "<group>";
@@ -346,10 +310,10 @@
 		C6FACC961BA8B36700976D09 /* Sprite */ = {
 			isa = PBXGroup;
 			children = (
-				C6FACC8D1BA8B35500976D09 /* TouchScene.h */,
-				C6FACC8E1BA8B35500976D09 /* TouchScene.m */,
-				C6FACC8F1BA8B35500976D09 /* TouchScene.sks */,
-				C631A4BE1BB0B37D00A7A153 /* SparkEmitter.sks */,
+				C6FACC8D1BA8B35500976D09 /* ZHTouchScene.h */,
+				C6FACC8E1BA8B35500976D09 /* ZHTouchScene.m */,
+				C6FACC8F1BA8B35500976D09 /* ZHTouchScene.sks */,
+				C631A4BE1BB0B37D00A7A153 /* ZHSparkEmitter.sks */,
 				C631A4BF1BB0B37D00A7A153 /* spark.png */,
 			);
 			name = Sprite;
@@ -387,10 +351,10 @@
 		C6FACC9D1BA8B49700976D09 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C6CEAFAF1BA90CBC00569A38 /* Notes.h */,
-				C6CEAFB01BA90CBC00569A38 /* Notes.m */,
-				C6CEAFB51BA90F3500569A38 /* Utilities.h */,
-				C6CEAFB61BA90F3500569A38 /* Utilities.m */,
+				C6CEAFAF1BA90CBC00569A38 /* ZHNotes.h */,
+				C6CEAFB01BA90CBC00569A38 /* ZHNotes.m */,
+				C6CEAFB51BA90F3500569A38 /* ZHUtilities.h */,
+				C6CEAFB61BA90F3500569A38 /* ZHUtilities.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -512,10 +476,10 @@
 				C6CEAFD41BA9DB3A00569A38 /* notes.txt in Resources */,
 				C6FACC6A1BA8B26800976D09 /* LaunchScreen.storyboard in Resources */,
 				C6CEAFD11BA9DB2400569A38 /* sdks.txt in Resources */,
-				C631A4C01BB0B37D00A7A153 /* SparkEmitter.sks in Resources */,
+				C631A4C01BB0B37D00A7A153 /* ZHSparkEmitter.sks in Resources */,
 				C6FACC671BA8B26800976D09 /* Assets.xcassets in Resources */,
 				C631A4C11BB0B37D00A7A153 /* spark.png in Resources */,
-				C6FACC931BA8B35500976D09 /* TouchScene.sks in Resources */,
+				C6FACC931BA8B35500976D09 /* ZHTouchScene.sks in Resources */,
 				C6FACC651BA8B26800976D09 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,28 +539,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6CEAFC91BA91CEF00569A38 /* UIColor+VWW.m in Sources */,
-				C6CEAFB41BA90E8700569A38 /* Instrument.m in Sources */,
 				C631A4B91BB0B0FD00A7A153 /* SKScene+Unarchive.m in Sources */,
-				C614B8651BAE83B700E57117 /* Oscillator.m in Sources */,
-				C6FACC921BA8B35500976D09 /* TouchScene.m in Sources */,
+				C6A5B83F1BB11B2800AA0E7B /* ZHCameraMonitor.m in Sources */,
+				C614B8651BAE83B700E57117 /* ZHOscillator.m in Sources */,
+				C6FACC921BA8B35500976D09 /* ZHTouchScene.m in Sources */,
 				C6CEAFCA1BA91CEF00569A38 /* NSTimer+Blocks.m in Sources */,
-				C6FA4CCF1BB1088B0070E038 /* Sensors.m in Sources */,
-				C6FACC941BA8B35500976D09 /* TouchViewController.m in Sources */,
-				C6CEAFB71BA90F3500569A38 /* Utilities.m in Sources */,
-				C614B85F1BAE80FF00E57117 /* OscillatorInstrument.m in Sources */,
-				C631A4CA1BB0C05F00A7A153 /* VariableDelay.m in Sources */,
+				C6FA4CCF1BB1088B0070E038 /* ZHSensors.m in Sources */,
+				C6FACC941BA8B35500976D09 /* ZHTouchViewController.m in Sources */,
+				C6CEAFB71BA90F3500569A38 /* ZHUtilities.m in Sources */,
+				C631A4CA1BB0C05F00A7A153 /* ZHVariableDelay.m in Sources */,
 				C6FACC5F1BA8B26800976D09 /* AppDelegate.m in Sources */,
-				C6FACC9C1BA8B3E300976D09 /* MotionMonitor.m in Sources */,
-				C6CEAFBF1BA91CD400569A38 /* EffectsProcessor.m in Sources */,
-				C6FA4CC91BB108730070E038 /* AudioController.m in Sources */,
+				C6FACC9C1BA8B3E300976D09 /* ZHMotionMonitor.m in Sources */,
+				C6FA4CC91BB108730070E038 /* ZHAudioController.m in Sources */,
 				C6CEAFC81BA91CEF00569A38 /* UIViewController+AlertController.m in Sources */,
 				C6FACC5C1BA8B26800976D09 /* main.m in Sources */,
-				C6CEAFBE1BA91CD400569A38 /* Conductor.m in Sources */,
-				C631A4BC1BB0B33700A7A153 /* SettingsTableViewController.m in Sources */,
-				C6FA4CCE1BB1088B0070E038 /* SensorInput.m in Sources */,
-				C6FACCA01BA8B52400976D09 /* Sensor.m in Sources */,
-				C6CEAFB11BA90CBC00569A38 /* Notes.m in Sources */,
-				C6CEAFC01BA91CD400569A38 /* ToneGenerator.m in Sources */,
+				C631A4BC1BB0B33700A7A153 /* ZHSettingsTableViewController.m in Sources */,
+				C6FA4CCE1BB1088B0070E038 /* ZHSensorInput.m in Sources */,
+				C6FACCA01BA8B52400976D09 /* ZHSensor.m in Sources */,
+				C6CEAFB11BA90CBC00569A38 /* ZHNotes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

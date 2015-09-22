@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Zakk Hoyt. All rights reserved.
 //
 
-#import "TouchViewController.h"
-#import "TouchScene.h"
-#import "MotionMonitor.h"
+#import "ZHTouchViewController.h"
+#import "ZHTouchScene.h"
+#import "ZHMotionMonitor.h"
 //#import "VWWPermissionKit.h"
 
 #import "SKScene+Unarchive.h"
@@ -18,10 +18,10 @@
 
 //#import "OscillatorInstrument.h"
 
-#import "Utilities.h"
+#import "ZHUtilities.h"
 
 
-@implementation TouchViewController
+@implementation ZHTouchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -74,7 +74,7 @@
     /* Sprite Kit applies additional optimizations to improve rendering performance */
     skView.ignoresSiblingOrder = YES;
     
-    TouchScene *scene = [TouchScene unarchiveFromFile:@"TouchScene"];
+    ZHTouchScene *scene = [ZHTouchScene unarchiveFromFile:@"ZHTouchScene"];
     scene.scaleMode = SKSceneScaleModeResizeFill;
     [skView presentScene:scene];
 
@@ -82,7 +82,7 @@
 
 
 -(void)setupMotionCapture{
-    [[MotionMonitor sharedInstance] start];
+    [[ZHMotionMonitor sharedInstance] start];
 }
 
 

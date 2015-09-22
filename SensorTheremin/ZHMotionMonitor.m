@@ -6,20 +6,20 @@
 //  Copyright © 2015 Zakk Hoyt. All rights reserved.
 //
 
-#import "MotionMonitor.h"
+#import "ZHMotionMonitor.h"
 @import CoreMotion;
 
-@interface MotionMonitor ()
+@interface ZHMotionMonitor ()
 @property (nonatomic, strong) CMMotionManager *motion;
-@property (nonatomic, strong, readwrite) Sensor *sensor;
+@property (nonatomic, strong, readwrite) ZHSensor *sensor;
 @end
 
-@implementation MotionMonitor
+@implementation ZHMotionMonitor
 
-+(MotionMonitor*)sharedInstance{
-    static MotionMonitor *instance;
++(ZHMotionMonitor*)sharedInstance{
+    static ZHMotionMonitor *instance;
     if(instance == nil){
-        instance = [[MotionMonitor alloc]init];
+        instance = [[ZHMotionMonitor alloc]init];
     }
     return instance;
 }
@@ -35,7 +35,7 @@
 
 -(void)start{
     [self.motion startDeviceMotionUpdatesToQueue:[NSOperationQueue new] withHandler:^(CMDeviceMotion * _Nullable motion, NSError * _Nullable error) {
-        Sensor *sensor = [[Sensor alloc]initWithX:motion.userAcceleration.x Y:motion.userAcceleration.y Z:motion.userAcceleration.z];
+        ZHSensor *sensor = [[ZHSensor alloc]initWithX:motion.userAcceleration.x Y:motion.userAcceleration.y Z:motion.userAcceleration.z];
         self.sensor = sensor;
     }];
     

@@ -1,5 +1,5 @@
 //
-//  NewInstrument.m
+//  ZHOscillator.m
 //  MotionTheremin
 //
 //  Created by Zakk Hoyt on 9/19/15.
@@ -7,11 +7,11 @@
 //
 //  http://audiokit.io/tutorials/user-interaction/
 
-#import "Oscillator.h"
+#import "ZHOscillator.h"
 #import "AKFoundation.h"
 
 
-@interface Oscillator ()
+@interface ZHOscillator ()
 
 //@property (nonatomic, strong) AKParameter *frequencyParameter;
 @property (nonatomic, strong) AKInstrumentProperty *frequencyValue;
@@ -20,7 +20,7 @@
 @property (nonatomic, strong) AKInstrumentProperty *amplitudeValue;
 @end
 
-@implementation Oscillator 
+@implementation ZHOscillator
 
 - (instancetype)init
 {

@@ -6,9 +6,9 @@
 //  Copyright © 2015 Zakk Hoyt. All rights reserved.
 //
 
-#import "Sensor.h"
+#import "ZHSensor.h"
 
-@implementation Sensor
+@implementation ZHSensor
 
 - (instancetype)initWithX:(CGFloat)x Y:(CGFloat)y Z:(CGFloat)z {
     self = [super init];

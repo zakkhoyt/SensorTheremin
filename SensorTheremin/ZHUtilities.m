@@ -10,12 +10,12 @@
 //  CGFloat v = [Utilities mapInValue:180 inMinimum:30 inMaximum:330 outMinimum:0.0 outMaximum:2.0];
 
 
-#import "Utilities.h"
+#import "ZHUtilities.h"
 
-@implementation Utilities
+@implementation ZHUtilities
 
 +(CGFloat)mapNormalizedValue:(CGFloat)normalizedValue minimum:(CGFloat)minimum maximum:(CGFloat)maximum{
-    return [Utilities mapInValue:normalizedValue inMinimum:0.0 inMaximum:1.0 outMinimum:minimum outMaximum:maximum];
+    return [ZHUtilities mapInValue:normalizedValue inMinimum:0.0 inMaximum:1.0 outMinimum:minimum outMaximum:maximum];
 }
 
 +(CGFloat)mapInValue:(CGFloat)inValue

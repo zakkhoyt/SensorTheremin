@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Notes : NSObject
-+(Notes *)sharedInstance;
+@interface ZHNotes : NSObject
++(ZHNotes *)sharedInstance;
 +(float)getClosestNoteForFrequency:(float)frequency;
 //+(float)getClosestNoteForFrequency:(float)frequency inKey:(VWWAutoTuneType)key;
 @end

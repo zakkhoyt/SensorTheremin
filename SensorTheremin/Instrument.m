@@ -7,10 +7,10 @@
 //
 
 #import "Instrument.h"
-#import "Utilities.h"
+#import "ZHUtilities.h"
 
 #import "AKFoundation.h"
-#import "Conductor.h"
+
 #import "NSTimer+Blocks.h"
 
 
@@ -37,7 +37,7 @@
 
 -(void)setFrequencyFromNormalizedValue:(CGFloat)normalizedValue{
 
-    CGFloat currentFrequency = [Utilities mapInValue:normalizedValue inMinimum:0.0 inMaximum:1.0 outMinimum:self.minFrequency outMaximum:self.maxFrequency];
+    CGFloat currentFrequency = [ZHUtilities mapInValue:normalizedValue inMinimum:0.0 inMaximum:1.0 outMinimum:self.minFrequency outMaximum:self.maxFrequency];
     self.currentFrequency = currentFrequency;
     [self.conductor playFrequency:self.currentFrequency];
 }

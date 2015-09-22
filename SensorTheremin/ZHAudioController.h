@@ -12,13 +12,13 @@
 
 #import "Instrument.h"
 //#import "OscillatorInstrument.h"
-#import "Oscillator.h"
+#import "ZHOscillator.h"
 
-@interface AudioController : NSObject
-+(AudioController*)sharedInstance;
+@interface ZHAudioController : NSObject
++(ZHAudioController*)sharedInstance;
 
 @property (nonatomic, strong) Instrument *touchX;
 @property (nonatomic, strong) Instrument *touchY;
-@property (nonatomic, strong) Oscillator *oscillator;
+@property (nonatomic, strong) ZHOscillator *oscillator;
 @property (nonatomic, strong) AKTambourineInstrument *tambourine;
 @end

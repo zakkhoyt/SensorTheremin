@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Aurelius Prochazka. All rights reserved.
 //
 
-#import "VariableDelay.h"
+#import "ZHVariableDelay.h"
 
-@implementation VariableDelay
+@implementation ZHVariableDelay
 
 - (instancetype)initWithAudioSource:(AKStereoAudio *)audioSource
 {

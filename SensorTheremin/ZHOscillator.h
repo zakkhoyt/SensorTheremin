@@ -1,5 +1,5 @@
 //
-//  NewInstrument.h
+//  ZHOscillator.h
 //  MotionTheremin
 //
 //  Created by Zakk Hoyt on 9/19/15.
@@ -8,7 +8,7 @@
 
 #import "AKInstrument.h"
 
-@interface Oscillator : AKInstrument
+@interface ZHOscillator : AKInstrument
 
 
 -(void)setFrequency:(float)frequency;

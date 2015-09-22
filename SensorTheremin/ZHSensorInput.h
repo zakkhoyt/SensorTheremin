@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 
 
-@interface SensorInput : NSObject
-@property (nonatomic) CGFloat minimumValue;
+@interface ZHSensorInput : NSObject
+
 @property (nonatomic) CGFloat maximumValue;
+@property (nonatomic) CGFloat value;
+@property (nonatomic) CGFloat minimumValue;
+
 
 // Somewhere between
 @property (nonatomic) CGFloat outputValue;

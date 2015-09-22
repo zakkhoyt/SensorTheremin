@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A278b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iYc-Ft-w6T">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iYc-Ft-w6T">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
     </dependencies>
     <scenes>
         <!--Touch View Controller-->
         <scene sceneID="vzv-3B-pOe">
             <objects>
-                <viewController storyboardIdentifier="TouchViewController" id="vkE-N1-XiV" customClass="TouchViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TouchViewController" id="vkE-N1-XiV" customClass="ZHTouchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sIE-CU-flD"/>
                         <viewControllerLayoutGuide type="bottom" id="LGs-HY-hB1"/>
@@ -45,7 +44,7 @@
         <!--Settings Table View Controller-->
         <scene sceneID="uxv-hL-3sh">
             <objects>
-                <tableViewController storyboardIdentifier="SettingsTableViewController" id="8V8-rc-HpL" customClass="SettingsTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SettingsTableViewController" id="8V8-rc-HpL" customClass="ZHSettingsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TaH-Ca-OWx">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
