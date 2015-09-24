@@ -1,0 +1,17 @@
+
+v0.1
+
+
+TouchScreen X and Y drive an instrument. (Oscillator, or other)
+
+That instrument is put though an effects pedal which is controlled by the accelerometer. (Distortion, reverb, or similar)
+
+The audio is visually rendered using spritekit.
+The audio is rendered to the iPhone's speaker/headphones/AirPlay
+
+
+v0.2
+List of 3 or 4 instruments
+List of 3 or 4 effects
+A visual way to connect inputs and outputs (backed by saveable data)
+Add the other motion sensors.

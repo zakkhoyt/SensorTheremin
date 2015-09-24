@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZHSensor.h"
 
 @interface ZHMotionMonitor : NSObject
 
@@ -17,5 +16,7 @@
 -(void)stop;
 
 // KVO observable
-@property (nonatomic, strong, readonly) ZHSensor *sensor;
+//@property (nonatomic, strong, readonly) ZHSensor *accelerometer;
+//@property (nonatomic, strong, readonly) ZHSensor *gyroscope;
+//@property (nonatomic, strong, readonly) ZHSensor *magnetometer;
 @end

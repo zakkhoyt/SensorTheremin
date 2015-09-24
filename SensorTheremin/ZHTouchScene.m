@@ -9,6 +9,9 @@
 #import "ZHTouchScene.h"
 #import "ZHUtilities.h"
 #import "ZHAudioController.h"
+#import "ZHSensorClusters.h"
+#import "ZHSensor.h"
+
 
 
 
@@ -133,7 +136,11 @@
     for (UITouch *touch in touches) {
         CGPoint point = [touch locationInNode:self];
         CGPoint normPoint = [self normalizePoint:point];
+ 
         [[[ZHAudioController sharedInstance] oscillator] setFrequency:normPoint.x * 1000];
+        
+        ZHSensorCluster *touchScreen = [[ZHSensorClusters sharedInstance] touchScreen];
+        [touchScreen updateSensorInputsForX:normPoint.x y:normPoint.y z:ZHSensorUnused];
     }
 }
 

@@ -7,11 +7,13 @@
 //
 
 #import "ZHMotionMonitor.h"
+#import "ZHSensorClusters.h"
+
 @import CoreMotion;
 
 @interface ZHMotionMonitor ()
 @property (nonatomic, strong) CMMotionManager *motion;
-@property (nonatomic, strong, readwrite) ZHSensor *sensor;
+@property (nonatomic, strong) ZHSensorClusters *sensorClusters;
 @end
 
 @implementation ZHMotionMonitor
@@ -27,16 +29,16 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.motion = [[CMMotionManager alloc]init];
-        
+        _sensorClusters = [ZHSensorClusters sharedInstance];
+        _motion = [[CMMotionManager alloc]init];
     }
     return self;
 }
 
 -(void)start{
     [self.motion startDeviceMotionUpdatesToQueue:[NSOperationQueue new] withHandler:^(CMDeviceMotion * _Nullable motion, NSError * _Nullable error) {
-        ZHSensor *sensor = [[ZHSensor alloc]initWithX:motion.userAcceleration.x Y:motion.userAcceleration.y Z:motion.userAcceleration.z];
-        self.sensor = sensor;
+        // Acceleration
+        [self.sensorClusters.accelerometer updateSensorInputsForX:motion.userAcceleration.x y:motion.userAcceleration.y z:motion.userAcceleration.z];
     }];
     
 }
