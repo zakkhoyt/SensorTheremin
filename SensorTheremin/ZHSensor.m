@@ -42,7 +42,7 @@ CGFloat const ZHSensorUnused = -111111111.1;
     self.outputNormalizedMax = MAX(self.outputNormalizedMax, self.outputNormalized);
     self.outputNormalizedMin = MIN(self.outputNormalizedMin, self.outputNormalized);
 
-    NSLog(@"%@ Raw: %.2f|%.2f|%.2f", _sensorName, _outputRawMin, _outputRaw, _outputRawMax);
-    NSLog(@"%@ Nor: %.2f|%.2f|%.2f", _sensorName, _outputNormalizedMin, _outputNormalized, _outputNormalizedMax);
+//    NSLog(@"%@ Raw: %.2f|%.2f|%.2f", _sensorName, _outputRawMin, _outputRaw, _outputRawMax);
+//    NSLog(@"%@ Nor: %.2f|%.2f|%.2f", _sensorName, _outputNormalizedMin, _outputNormalized, _outputNormalizedMax);
 }
 @end

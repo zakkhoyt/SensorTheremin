@@ -8,12 +8,9 @@
 
 #import "ZHTouchScene.h"
 #import "ZHUtilities.h"
-#import "ZHAudioController.h"
+//#import "ZHAudioController.h"
 #import "ZHSensorClusters.h"
 #import "ZHSensor.h"
-
-
-
 
 @interface ZHTouchScene ()
 @property (nonatomic, strong) SKLabelNode *xLabelNode;
@@ -27,16 +24,10 @@
 @implementation ZHTouchScene
 
 -(void)didMoveToView:(SKView *)view {
-    
     [self setupEmitter];
     [self setupLabels];
-    [self setupInstruments];
-    
 }
 
--(void)setupInstruments{
-    [ZHAudioController sharedInstance];
-}
 
 -(void)setupEmitter{
     {
@@ -88,7 +79,7 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    [[[ZHAudioController sharedInstance] oscillator] play];
+//    [[[ZHAudioController sharedInstance] oscillator] play];
     
     self.sparkEmitterNode.particleBirthRate = 200;
     [self.sparkEmitterNode resetSimulation];
@@ -113,7 +104,7 @@
 
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    [[[ZHAudioController sharedInstance] oscillator] stop];
+//    [[[ZHAudioController sharedInstance] oscillator] stop];
     
     CGPoint point = [[touches anyObject] locationInNode:self];
     self.sparkEmitterNode.position = point;
@@ -137,7 +128,7 @@
         CGPoint point = [touch locationInNode:self];
         CGPoint normPoint = [self normalizePoint:point];
  
-        [[[ZHAudioController sharedInstance] oscillator] setFrequency:normPoint.x * 1000];
+//        [[[ZHAudioController sharedInstance] oscillator] setFrequency:normPoint.x * 1000];
         
         ZHSensorCluster *touchScreen = [[ZHSensorClusters sharedInstance] touchScreen];
         [touchScreen updateSensorInputsForX:normPoint.x y:normPoint.y z:ZHSensorUnused];
@@ -158,11 +149,7 @@
     CGPoint normPoint = CGPointZero;
     normPoint.x = [ZHUtilities mapInValue:point.x inMinimum:0 inMaximum:self.frame.size.width outMinimum:0.0 outMaximum:1.0];
     normPoint.y = [ZHUtilities mapInValue:point.y inMinimum:0 inMaximum:self.frame.size.height outMinimum:0.0 outMaximum:1.0];
-        self.xLabelNode.text = [NSString stringWithFormat:@"x: %.2f %.2f",
-                                normPoint.x, [ZHAudioController sharedInstance].touchX.currentFrequency];
-    
-        self.yLabelNode.text = [NSString stringWithFormat:@"y: %.2f %.2f",
-                                normPoint.y, [ZHAudioController sharedInstance].touchY.currentFrequency];
+    self.xLabelNode.text = [NSString stringWithFormat:@"x: %@", NSStringFromCGPoint(normPoint)];
     
     
     return normPoint;

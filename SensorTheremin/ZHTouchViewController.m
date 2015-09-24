@@ -12,6 +12,7 @@
 //#import "VWWPermissionKit.h"
 #import <SpriteKit/SpriteKit.h>
 #import "SKScene+Unarchive.h"
+#import "ZHAudioController.h"
 
 
 //#import "VWWPer
@@ -34,6 +35,7 @@
     [self addGestureRecognizers];
     [self setupMotionCapture];
     
+    [ZHAudioController sharedInstance];
     
 }
 
