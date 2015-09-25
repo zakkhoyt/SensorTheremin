@@ -1,3 +1,4 @@
+
 //
 //  AudioController.m
 //  SensorTheremin
@@ -8,6 +9,7 @@
 
 #import "ZHAudioController.h"
 #import "ZHSensorClusters.h"
+#import "ZHUtilities.h"
 
 
 @interface ZHAudioController ()
@@ -35,6 +37,7 @@
 
         self.sensorClusters = [ZHSensorClusters sharedInstance];
         [self.sensorClusters addObserver:self forKeyPath:@"accelerometer.x.outputNormalized" options:NSKeyValueObservingOptionNew context:nil];
+        [self.sensorClusters addObserver:self forKeyPath:@"accelerometer.z.outputNormalized" options:NSKeyValueObservingOptionNew context:nil];
     }
     return self;
 }
@@ -45,15 +48,23 @@
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
-    NSLog(@"%@ changed", keyPath);
-    
+//    NSLog(@"%@ changed", keyPath);
+    ZHSensorClusters *sensorClusters = nil;
+    if([object isKindOfClass:[ZHSensorClusters class]]){
+        sensorClusters = object;
+    }
+
     NSNumber *outputNormalizedNumber = change[NSKeyValueChangeNewKey];
     CGFloat outputNormalized = outputNormalizedNumber.doubleValue;
     if([keyPath isEqualToString:@"accelerometer.x.outputNormalized"]){
-        [self.oscillator setFrequency:outputNormalized * 1000];
+        CGFloat freq = [ZHUtilities mapInValue:outputNormalized inMinimum:-1.0 inMaximum:1.0 outMinimum:200 outMaximum:2000];
+        NSLog(@"freq: %.2f", freq);
+        [self.oscillator setFrequency:freq];
     } else if([keyPath isEqualToString:@"accelerometer.y.outputNormalized"]){
-        [self.oscillator setCarrier:outputNormalized * 1000];
+        
     } else if([keyPath isEqualToString:@"accelerometer.z.outputNormalized"]){
+        CGFloat freq = [ZHUtilities mapInValue:outputNormalized inMinimum:-1.0 inMaximum:1.0 outMinimum:0 outMaximum:1.0];
+        [self.oscillator setAmplitude:freq];
         
     }
     

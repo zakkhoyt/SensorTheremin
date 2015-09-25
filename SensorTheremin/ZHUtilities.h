@@ -10,9 +10,14 @@
 
 @interface ZHUtilities : NSObject
 
-+(CGFloat)mapNormalizedValue:(CGFloat)normalizedValue
-                     minimum:(CGFloat)minimum
-                     maximum:(CGFloat)maximum;
+// 0 < inputValue < 1.0
+// outMinimum < return < outMaximum
++(CGFloat)mapPositiveNormalizedInputValue:(CGFloat)inputValue outMinimum:(CGFloat)outMinimum outMaximum:(CGFloat)outMaximum;
+
+// -1.0 < inputValue < 1.0
+// outMinimum < return < outMaximum
++(CGFloat)mapInputNormalizedValue:(CGFloat)inputValue outMinimum:(CGFloat)outMinimum outMaximum:(CGFloat)outMaximum;
+
 
 +(CGFloat)mapInValue:(CGFloat)inValue
            inMinimum:(CGFloat)inMinimum

@@ -14,9 +14,18 @@
 
 @implementation ZHUtilities
 
-+(CGFloat)mapNormalizedValue:(CGFloat)normalizedValue minimum:(CGFloat)minimum maximum:(CGFloat)maximum{
-    return [ZHUtilities mapInValue:normalizedValue inMinimum:0.0 inMaximum:1.0 outMinimum:minimum outMaximum:maximum];
+// 0 < inputValue < 1.0
+// outMinimum < return < outMaximum
++(CGFloat)mapPositiveNormalizedInputValue:(CGFloat)inputValue outMinimum:(CGFloat)outMinimum outMaximum:(CGFloat)outMaximum{
+    return [ZHUtilities mapInValue:inputValue inMinimum:0.0 inMaximum:1.0 outMinimum:outMinimum outMaximum:outMaximum];
 }
+
+// -1.0 < inputValue < 1.0
+// outMinimum < return < outMaximum
++(CGFloat)mapInputNormalizedValue:(CGFloat)inputValue outMinimum:(CGFloat)outMinimum outMaximum:(CGFloat)outMaximum{
+    return [ZHUtilities mapInValue:inputValue inMinimum:-1.0 inMaximum:1.0 outMinimum:outMinimum outMaximum:outMaximum];
+}
+
 
 +(CGFloat)mapInValue:(CGFloat)inValue
            inMinimum:(CGFloat)inMinimum

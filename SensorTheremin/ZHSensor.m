@@ -38,7 +38,7 @@ CGFloat const ZHSensorUnused = -111111111.1;
     self.outputRawMin = MIN(self.outputRawMin, self.outputRaw);
     
     // Set normalized outputs
-    self.outputNormalized = [ZHUtilities mapNormalizedValue:inputValue minimum:_expectedInputMin maximum:_expectedInputMax];
+    self.outputNormalized = [ZHUtilities mapInputNormalizedValue:inputValue outMinimum:_expectedInputMin outMaximum:_expectedInputMax];
     self.outputNormalizedMax = MAX(self.outputNormalizedMax, self.outputNormalized);
     self.outputNormalizedMin = MIN(self.outputNormalizedMin, self.outputNormalized);
 

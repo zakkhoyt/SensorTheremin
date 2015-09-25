@@ -45,7 +45,6 @@
         self.trailEmitterNode.targetNode = self;
         [self addChild:self.trailEmitterNode];
     }
-    
 }
 
 
@@ -53,19 +52,19 @@
     self.xLabelNode = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
     self.xLabelNode.text = @"x";
     self.xLabelNode.fontSize = 24;
+    self.xLabelNode.color = [UIColor redColor];
     self.xLabelNode.position = CGPointMake(CGRectGetMidX(self.frame),
-                                           CGRectGetMidY(self.frame) - 40);
+                                           CGRectGetMidY(self.frame));
     
     [self addChild:self.xLabelNode];
     
-    self.yLabelNode = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-    self.yLabelNode.text = @"y";
-    self.yLabelNode.fontSize = 24;
-    self.yLabelNode.position = CGPointMake(CGRectGetMidX(self.frame),
-                                           CGRectGetMidY(self.frame) + 40);
-    
-    [self addChild:self.yLabelNode];
-    
+//    self.yLabelNode = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+//    self.yLabelNode.text = @"y";
+//    self.yLabelNode.fontSize = 24;
+//    self.yLabelNode.position = CGPointMake(CGRectGetMidX(self.frame),
+//                                           CGRectGetMidY(self.frame) + 40);
+//    
+//    [self addChild:self.yLabelNode];
 }
 
 #pragma mark SKScene
@@ -149,7 +148,9 @@
     CGPoint normPoint = CGPointZero;
     normPoint.x = [ZHUtilities mapInValue:point.x inMinimum:0 inMaximum:self.frame.size.width outMinimum:0.0 outMaximum:1.0];
     normPoint.y = [ZHUtilities mapInValue:point.y inMinimum:0 inMaximum:self.frame.size.height outMinimum:0.0 outMaximum:1.0];
-    self.xLabelNode.text = [NSString stringWithFormat:@"x: %@", NSStringFromCGPoint(normPoint)];
+    NSString *posStr = [NSString stringWithFormat:@"x: %.2f,%.2f", normPoint.x, normPoint.y];
+    NSLog(@"%@", posStr);
+    self.xLabelNode.text = posStr;
     
     
     return normPoint;
